@@ -1,0 +1,19 @@
+<h2>All conversations</h2>
+
+<% unless @received_messages.empty? %>
+	<h2>All received messages</h2>
+	<ul class="received_messages">
+	<% @received_messages.each do |f| %>
+		<li><%= f.title %>: <%= link_to truncate(f.body, length: 30), f %></li>
+	<% end %>
+	</ul>
+<% end %>
+
+<% unless @sent_messages.empty? %>
+	<h2>All sent messages</h2>
+	<ul class="sent_messages">
+	<% @sent_messages.each do |f| %>
+		<li><%= f.title %>: <%= link_to truncate(f.body, length: 30), f %></li>
+	<% end %>
+	</ul>
+<% end %>

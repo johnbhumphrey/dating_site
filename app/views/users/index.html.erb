@@ -1,0 +1,38 @@
+<% title("Test") %>
+
+<% content_for :sidebar do %>
+  <%= link_to "Test1", '#' %><br>
+  <%= link_to "Test1", '#' %><br>
+  <%= link_to "Test1", '#' %><br>
+<% end %>
+
+
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Password digest</th>
+    <th>Email</th>
+    <th>Admin</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.password_digest %></td>
+    <td><%= user.email %></td>
+    <td><%= user.admin %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

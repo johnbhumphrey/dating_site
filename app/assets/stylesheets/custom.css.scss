@@ -1,0 +1,13 @@
+div.private_message {
+
+}
+
+h3.message {
+	background: url(open.png) no-repeat 0 11px;
+	padding: 10px 0 0 25px;
+	cursor: pointer;
+}
+
+h3.expanded {
+	background-image: url(close.png);
+}

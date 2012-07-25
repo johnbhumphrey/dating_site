@@ -1,0 +1,16 @@
+<% title("Conversation with #{@sender.nick_name}") %>
+
+<% sidebar_main_title("Details: #{@sender.nick_name}") %>
+<% sidebar_sub_title("#{@sender.age} / #{@sender.sex} /
+#{@sender.zipcode} /  #{@sender.relationship_status}") %>
+<%= render 'shared/profile_info', object: @sender %>
+
+<p class="profile">
+	<h3>Message from <%= @sender.nick_name %></h3><br>
+	<h5><%= @current_message.title %></h5>
+</p>
+<p class="profile">
+	<span class="message_body"><%= @current_message.body %></span>
+</p>
+
+

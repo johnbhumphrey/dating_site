@@ -1,0 +1,14 @@
+<%= form_for [@profile, @photo] do |f| %>
+  <h3>Select a file to upload: </h3>
+  <div class="field">
+  	<%= f.label :avatar, "Select a photo to upload from your computer" %>
+  	<%= f.file_field :avatar %>
+  </div>
+  <div class="field">
+  	<%= f.label :primary, "Make this photo your main profile picture?" %>
+  	<%= f.check_box :primary %>
+  </div>
+  <div class="actions">
+  	<%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,52 @@
+<% title("#{@profile.nick_name}'s profile") %>
+
+<h2>
+<% if @profile.has_main_photo? %>
+	<%= image_tag @profile.main_photo.avatar.url(:medium) %>
+<% else %>
+	<%= image_tag 'default.jpg' %>
+<% end %>
+<%= @profile.nick_name %>
+<% if current_user.profile == @profile %>
+	(<%= link_to "Edit your photos", edit_profile_photo_path([@profile]) %>)
+<% else %>
+	<%= render 'shared/send_wink', object: @profile %>
+<% end %>
+</h2>
+<span class="profile_header"><%= @profile.age %> / <%= @profile.sex %> /
+<%= @profile.zipcode %> / <%= @profile.relationship_status %></span><br><br>
+
+<h3>About me:</h3>
+<p><%= @profile.about_me %></p><br>
+
+<h3>What I'm good at:</h3>
+<p><%= @profile.good_at %></p><br>
+
+<h3>You should message me if:</h3>
+<p><%= @profile.message_me_if %></p><br>
+<% sidebar_main_title("Details") %>
+<% sidebar_sub_title(@profile.nick_name) %>
+<%= render 'shared/profile_info', object: @profile %>
+
+<% content_for(:sidebar2) do %>
+
+<% end %>
+<% unless current_user.profile == @profile %>
+	<h3 class= "message">Send a private message to <%= @profile.nick_name %></h3><br>
+	<div class="send_message">
+	<%= form_for PrivateMessage.new, html: { class: "well form-inline" } do |f| %>
+		<%= f.hidden_field :receiver_id, value: @profile.user_id %>
+	  <div class="field">
+	    <%= f.label :title, "Title" %><br />
+	    <%= f.text_field :title %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :body, "Message Body" %><br />
+	    <%= f.text_area :body, class: "input-xlarge" %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit 'Send Message!' %>
+	  </div>
+	<% end %>
+	</div>
+<% end %>

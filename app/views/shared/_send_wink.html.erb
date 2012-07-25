@@ -1,0 +1,6 @@
+<% unless current_user.profile.sent_wink?(object.id) %>
+<%= button_to "Send Wink", { controller: "winks", action: "create", 
+	profile_id: object.id }, { method: :post, class: "btn btn-primary btn-large"} %>
+<% else %>
+<%= button_to "Wink already sent" %>
+<% end %>

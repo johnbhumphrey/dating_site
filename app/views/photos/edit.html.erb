@@ -1,0 +1,28 @@
+<% if @profile.photos.any? %>
+	<% @profile.photos.each do |photo| %>
+		<div id= "form_<%= photo.id %>">
+		<%= form_for [@profile, photo] do |f| %>
+			<div class="photo">
+				<%= image_tag photo.avatar.url %> 
+				<%= link_to "(delete?)", profile_photo_path(@profile, photo), 
+					method: 'delete', confirm: "Are you sure?" %><br>
+			</div>
+		    <div class="field">
+		        <%= f.label :caption %><br />
+		        <%= f.text_area :caption %>
+		    </div>
+		    <div class="field">
+		        <%= f.label :primary, "Make this your primary photo? (uncheck others)" %><br />
+		        <%= f.check_box :primary %>
+		    </div>
+		    <div class="actions">
+   				<%= f.submit %>
+  			</div>
+		<% end %>
+		</div>
+	<% end %>
+<% else %>
+<h2>You have no photos:  <%= link_to "Add a new photo", new_profile_photo_path(@profile) %>
+</h2>
+<% end %>
+<%= render 'upload', object: @profile %>

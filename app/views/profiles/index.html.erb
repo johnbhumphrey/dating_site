@@ -1,0 +1,44 @@
+<% title("View all profiles!") %>
+
+<% content_for :sidebar do %>
+  <%= @side_profiles.count %> Profiles <br>
+  <%= link_to "Test1", '#' %><br>
+  <%= link_to "Test1", '#' %><br>
+  <%= link_to "Test1", '#' %><br>
+<% end %>
+
+
+<h1>Listing profiles</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Username</th>
+    <th>Age</th>
+    <th>Sex</th>
+    <th>Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @profiles.each do |profile| %>
+  <tr>
+    <% if profile.has_main_photo? %>
+    <td><%= link_to image_tag(profile.main_photo.avatar.url(:thumb)), profile %></td>
+    <% else %>
+    <td><%= link_to image_tag(Profile.find(4).photos.first.
+        avatar.url(:thumb)), profile %></td>
+    <% end %>
+    <td><%= link_to profile.nick_name, profile %></td>
+    <td><%= profile.age %></td>
+    <td><%= profile.sex %></td>
+    <td><%= profile.location %></td>
+    <td><%= link_to 'Show', profile %></td>
+    <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+    <td><%= link_to 'Destroy', profile, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+

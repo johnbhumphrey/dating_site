@@ -1,0 +1,96 @@
+<%= form_for(@profile) do |f| %>
+  <% if @profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% @profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.select :age, 18..100, prompt: 'Select an age' %>
+  </div>
+  <div class="field">
+    <%= f.label :sex %><br />
+    <%= f.select :sex, ['Male', 'Female'], prompt: 'Select a sex' %>
+  </div>
+  <div class="field">
+    <%= f.label :interested_in %><br />
+    <%= f.select :interested_in, Profile::INTERESTED_TYPES, prompt: 'Select a sex in which you are interested' %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br />
+    <%= f.text_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :about_me %><br />
+    <%= f.text_area :about_me, size: 50 %>
+  </div>
+  <div class="field">
+    <%= f.label :good_at %><br />
+    <%= f.text_area :good_at, size: 50 %>
+  </div>
+  <div class="field">
+    <%= f.label :message_me_if, "You should message me if..." %><br />
+    <%= f.text_area :message_me_if, size: 50 %>
+  </div>
+  <div class="field">
+    <%= f.label :body_type %><br />
+    <%= f.select :body_type, Profile::BODY_TYPES, prompt: 'Select a body type' %>
+  </div>
+  <div class="field">
+    <%= f.label :relationship_status %><br />
+    <%= f.select :relationship_status, Profile::RELATIONSHIP_TYPES, prompt: 'Relationship Status?' %>
+  </div>
+  <div class="field">
+    <%= f.label :smokes %><br />
+    <%= f.select :smokes, Profile::SMOKES_TYPES, prompt: 'What are your smoking habits?' %>
+  </div>
+  <div class="field">
+    <%= f.label :height, "Height in Inches" %><br />
+    <%= f.select :height, 36..100 , prompt: 'Select a height in inches' %>
+  </div>
+  <div class="field">
+    <%= f.label :ethnicity %><br />
+    <%= f.select :ethnicity, Profile::ETHNICITY_TYPES, prompt: 'Select an ethnicity' %>
+  </div>
+  <div class="field">
+    <%= f.label :drinks %><br />
+    <%= f.select :drinks, Profile::DRINKS_TYPES, prompt: 'Select drinking habits' %>
+  </div>
+  <div class="field">
+    <%= f.label :religion %><br />
+    <%= f.select :religion, Profile::RELIGION_TYPES, prompt: 'Select a religion' %>
+  </div>
+  <div class="field">
+    <%= f.label :income %><br />
+    <%= f.select :income, Profile::INCOME_TYPES, prompt: 'Select a religion' %>
+  </div>
+  <div class="field">
+    <%= f.label :job, "Enter a brief job title" %><br />
+    <%= f.text_field :job %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.select :language, Profile::LANGUAGE_TYPES, prompt: 'Select a Language' %>
+  </div>
+  <div class="field">
+    <%= f.label :drugs %><br />
+    <%= f.select :drugs, Profile::DRUGS_TYPES, prompt: 'Drug Usage?' %>
+  </div>
+  <div class="field">
+    <%= f.label :offspring %><br />
+    <%= f.select :offspring, Profile::OFFSPRING_TYPES, prompt: 'Offspring?' %>
+  </div>
+  <div class="field">
+    <%= f.label :exercise %><br />
+    <%= f.select :exercise, Profile::EXERCISE_TYPES, prompt: 'Describe your exercise habits' %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Create Profile' %>
+  </div>
+<% end %>
