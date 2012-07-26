@@ -52,6 +52,12 @@ class Profile < ActiveRecord::Base
 
   has_many :sent_winks, class_name: "Wink", foreign_key: 'sender_id'
   has_many :received_winks, class_name: "Wink", foreign_key: 'receiver_id'
+
+  has_many :favorite_profiles, class_name: 'Favorite', foreign_key: 'favoriter_id',
+      dependent: :destroy
+  has_many :favorited_by_profiles, class_name: 'Favorite', foreign_key: 'favoritee_id',
+      dependent: :destroy      
+      
   belongs_to :user
 
   def has_main_photo?
@@ -127,5 +133,6 @@ end
 #  avatar_content_type :string(255)
 #  avatar_file_size    :integer
 #  avatar_updated_at   :datetime
+#  hidden              :boolean         default(FALSE)
 #
 

@@ -4,13 +4,21 @@
 <% if @profile.has_main_photo? %>
 	<%= image_tag @profile.main_photo.avatar.url(:medium) %>
 <% else %>
-	<%= image_tag 'default.jpg' %>
+	<%= image_tag 'nopicture_full.png' %>
 <% end %>
 <%= @profile.nick_name %>
 <% if current_user.profile == @profile %>
 	(<%= link_to "Edit your photos", edit_profile_photo_path([@profile]) %>)
 <% else %>
-	<%= render 'shared/send_wink', object: @profile %>
+	<% if !current_user.profile.sent_wink?(@profile.id) %>
+	<div class="new_wink">
+		<%= render 'shared/send_wink', object: @profile %>
+	</div>
+	<% else %>
+	<div class="wink_sent">
+		<%= render 'shared/sent_wink', object: @profile %>
+	</div>
+	<% end %>
 <% end %>
 </h2>
 <span class="profile_header"><%= @profile.age %> / <%= @profile.sex %> /

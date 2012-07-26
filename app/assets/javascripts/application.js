@@ -17,7 +17,7 @@
 
 $(document).ready(function() {
     $('.send_message').hide();
-    $('.container h3').toggle(
+    $('.container h3.message').toggle(
 		function() {
 	       $(this).nextAll('.send_message').fadeIn();
 		   $(this).addClass('expanded');

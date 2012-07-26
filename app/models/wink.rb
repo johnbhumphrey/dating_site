@@ -8,3 +8,14 @@ class Wink < ActiveRecord::Base
   
   validates_uniqueness_of :receiver_id, scope: :sender_id
 end
+# == Schema Information
+#
+# Table name: winks
+#
+#  id          :integer         not null, primary key
+#  sender_id   :integer
+#  receiver_id :integer
+#  created_at  :datetime        not null
+#  updated_at  :datetime        not null
+#
+

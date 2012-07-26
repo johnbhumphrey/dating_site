@@ -27,8 +27,7 @@
     <% if profile.has_main_photo? %>
     <td><%= link_to image_tag(profile.main_photo.avatar.url(:thumb)), profile %></td>
     <% else %>
-    <td><%= link_to image_tag(Profile.find(4).photos.first.
-        avatar.url(:thumb)), profile %></td>
+    <td><%= link_to image_tag('nopicture.png'), profile %></td>
     <% end %>
     <td><%= link_to profile.nick_name, profile %></td>
     <td><%= profile.age %></td>
