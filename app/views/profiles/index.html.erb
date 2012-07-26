@@ -8,36 +8,23 @@
 <% end %>
 
 
-<h1>Listing profiles</h1>
+<h1>Listing all user profiles</h1>
 
-<table>
-  <tr>
-    <th></th>
-    <th>Username</th>
-    <th>Age</th>
-    <th>Sex</th>
-    <th>Location</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @profiles.each do |profile| %>
-  <tr>
+<% @profiles.each_with_index do |profile, i| %>
+  <div class="profile" id="id_<%= profile.id %> type_<%= i%2 %>">
+    <span class="image_thumbnail">
     <% if profile.has_main_photo? %>
-    <td><%= link_to image_tag(profile.main_photo.avatar.url(:thumb)), profile %></td>
+      <%= link_to image_tag(profile.main_photo.avatar.url(:thumb)), profile %>
     <% else %>
-    <td><%= link_to image_tag('nopicture.png'), profile %></td>
+      <%= link_to image_tag('nopicture.png'), profile %>
     <% end %>
-    <td><%= link_to profile.nick_name, profile %></td>
-    <td><%= profile.age %></td>
-    <td><%= profile.sex %></td>
-    <td><%= profile.location %></td>
-    <td><%= link_to 'Show', profile %></td>
-    <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
-    <td><%= link_to 'Destroy', profile, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+    <span class="user_name"><%= profile.nick_name %></span>
+    <span class="short_bio">
+      <%= profile.age %> / <%= profile.sex %> / <%= profile.zipcode %>
+    </span>
+    <span class= "about_me"><%= truncate(profile.about_me, length: 30) %></span>
+  </div>
 <% end %>
-</table>
+
 
 

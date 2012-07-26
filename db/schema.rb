@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120726014326) do
+ActiveRecord::Schema.define(:version => 20120726144239) do
 
   create_table "favorites", :force => true do |t|
     t.integer  "favoriter_id"
@@ -78,6 +78,7 @@ ActiveRecord::Schema.define(:version => 20120726014326) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.boolean  "hidden",              :default => false
+    t.boolean  "new_user"
   end
 
   create_table "users", :force => true do |t|

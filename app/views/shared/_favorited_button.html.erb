@@ -1,0 +1,6 @@
+<%= button_to "FAVORITED: click to undo", profile_favorite_path(object.id, 
+	current_user.profile.favorites.find_by_favoritee_id(object.id)),
+	{ method: :delete, class: "btn btn-warning btn-small", remote: true } %>
+<!-- So this method seems to require a delete ID for the ajax to work
+	I can either supply the correct one then do Favorite.find(params[:id]) or I can
+	give it any value, and find it by the same method in the controller for deletion -->

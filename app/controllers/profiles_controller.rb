@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
   before_filter :must_have_profile, only: [ :update, :show, :edit, :index ]
+  before_filter :must_be_own_profile, only: [ :update, :edit, :destroy ]
   
   def new
     @profile= Profile.new
@@ -35,7 +36,14 @@ class ProfilesController < ApplicationController
 
   def index
     @profiles= Profile.where(hidden: false).all
+    @profiles.delete(current_user.profile)
     @side_profiles= Profile.generate_random_profiles(@profiles)
+  end
+
+  def destroy
+    @profile= Profile.find(params[:id])
+    @profile.destroy
+    redirect_to profiles_path, flash: { success: "Successfully deleted profile." }
   end
 
   private
@@ -43,6 +51,14 @@ class ProfilesController < ApplicationController
     def must_have_profile
       if current_user.profile.nil?
         redirect_to new_profile_path, flash: { notice: "Please create a profile to view other profiles."}
+      end
+    end
+
+    def must_be_own_profile
+      @profile= Profile.find(params[:id])
+      unless current_user.profile == @profile
+        redirect_to root_path
+        flash[:error]= "Get the fuck out of here"
       end
     end
 end

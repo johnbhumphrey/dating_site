@@ -53,12 +53,14 @@ class Profile < ActiveRecord::Base
   has_many :sent_winks, class_name: "Wink", foreign_key: 'sender_id'
   has_many :received_winks, class_name: "Wink", foreign_key: 'receiver_id'
 
-  has_many :favorite_profiles, class_name: 'Favorite', foreign_key: 'favoriter_id',
+  has_many :favorites, class_name: 'Favorite', foreign_key: 'favoriter_id',
       dependent: :destroy
-  has_many :favorited_by_profiles, class_name: 'Favorite', foreign_key: 'favoritee_id',
+  has_many :favorited_by, class_name: 'Favorite', foreign_key: 'favoritee_id',
       dependent: :destroy      
       
   belongs_to :user
+
+  default_scope order: 'created_at DESC'
 
   def has_main_photo?
     return photos.where(primary: true).any?
@@ -94,6 +96,10 @@ class Profile < ActiveRecord::Base
 
   def sent_wink?(receiver_id)
     sent_winks.find_by_receiver_id(receiver_id)
+  end
+
+  def favorited?(favoritee_id)
+    favorites.find_by_favoritee_id(favoritee_id)
   end
 
 end
@@ -134,5 +140,6 @@ end
 #  avatar_file_size    :integer
 #  avatar_updated_at   :datetime
 #  hidden              :boolean         default(FALSE)
+#  new_user            :boolean
 #
 

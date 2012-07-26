@@ -6,18 +6,25 @@
 <% else %>
 	<%= image_tag 'nopicture_full.png' %>
 <% end %>
-<%= @profile.nick_name %>
+<%= @profile.nick_name %><br>
 <% if current_user.profile == @profile %>
 	(<%= link_to "Edit your photos", edit_profile_photo_path([@profile]) %>)
 <% else %>
 	<% if !current_user.profile.sent_wink?(@profile.id) %>
-	<div class="new_wink">
+	<span class="new_wink">
 		<%= render 'shared/send_wink', object: @profile %>
-	</div>
+	</span>
 	<% else %>
-	<div class="wink_sent">
 		<%= render 'shared/sent_wink', object: @profile %>
-	</div>
+	<% end %>
+	<% if !current_user.profile.favorited?(@profile.id) %>
+	<span class="favorite">
+		<%= render 'shared/favorite_button', object: @profile %>
+	</span>
+	<% else %>
+	<span class="favorite">
+		<%= render 'shared/favorited_button', object: @profile %>
+	</span>
 	<% end %>
 <% end %>
 </h2>

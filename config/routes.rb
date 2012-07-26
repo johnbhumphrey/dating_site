@@ -1,12 +1,6 @@
 Dating::Application.routes.draw do
 
 
-  get "winks/new"
-
-  get "winks/create"
-
-  get "winks/index"
-
   match '/about', to: "pages#about"
   match '/contact', to: "pages#contact"
   match '/help', to: "pages#help"
@@ -18,6 +12,7 @@ Dating::Application.routes.draw do
 
   resources :users
   resources :profiles do
+    resources :favorites, only: [:index, :new, :create, :destroy]
     resources :photos
     resources :winks, only: [:index, :new, :create]
   end

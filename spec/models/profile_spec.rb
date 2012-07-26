@@ -48,5 +48,6 @@ end
 #  avatar_file_size    :integer
 #  avatar_updated_at   :datetime
 #  hidden              :boolean         default(FALSE)
+#  new_user            :boolean
 #
 
