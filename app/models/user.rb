@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
 
   validates :nick_name, presence: true, uniqueness: { case_sensitive: false }
   has_secure_password
+
+
   
   has_many :sent_messages, class_name: "PrivateMessage", foreign_key: 'sender_id',
       dependent: :destroy
@@ -16,18 +18,25 @@ class User < ActiveRecord::Base
 
   has_one :profile, dependent: :destroy 
 
+  before_save { |user| user.email = email.downcase }
+  before_save :create_remember_token
+
   after_destroy :ensure_an_admin_remains
 
 
   private
 
-  def ensure_an_admin_remains
-  	if User.count.zero?
-  		raise "Can't delete last user" #an exception in the callback triggers an automatic rollback
-  		#the exception is thrown to the controller, where we can use a begin/end block to display a flash
-  	end
+    def create_remember_token
+      self.remember_token= SecureRandom.urlsafe_base64
+    end
+
+    def ensure_an_admin_remains
+    	if User.count.zero?
+    		raise "Can't delete last user" #an exception in the callback triggers an automatic rollback
+    		#the exception is thrown to the controller, where we can use a begin/end block to display a flash
+    	end
+    end
   end
-end
 
 # == Schema Information
 #
@@ -40,7 +49,7 @@ end
 #  admin           :boolean         default(FALSE)
 #  created_at      :datetime        not null
 #  updated_at      :datetime        not null
-#  profile_id      :integer
 #  nick_name       :string(255)
+#  remember_token  :string(255)
 #
 

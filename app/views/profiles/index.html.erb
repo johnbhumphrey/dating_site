@@ -10,21 +10,12 @@
 
 <h1>Listing all user profiles</h1>
 
+<%= will_paginate %>
+<ul class="profile_list">
 <% @profiles.each_with_index do |profile, i| %>
-  <div class="profile" id="id_<%= profile.id %> type_<%= i%2 %>">
-    <span class="image_thumbnail">
-    <% if profile.has_main_photo? %>
-      <%= link_to image_tag(profile.main_photo.avatar.url(:thumb)), profile %>
-    <% else %>
-      <%= link_to image_tag('nopicture.png'), profile %>
-    <% end %>
-    <span class="user_name"><%= profile.nick_name %></span>
-    <span class="short_bio">
-      <%= profile.age %> / <%= profile.sex %> / <%= profile.zipcode %>
-    </span>
-    <span class= "about_me"><%= truncate(profile.about_me, length: 30) %></span>
-  </div>
+  <li><%= render profile, i: i %></li>
 <% end %>
-
+</ul>
+<%= will_paginate %>
 
 

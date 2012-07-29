@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
   skip_before_filter :authenticate, only: [ :new, :create ]
   before_filter :fetch_user, except: [ :index, :new, :create ]
+  before_filter :correct_user, only: [ :destroy, :update, :edit ]
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.paginate(page: params[:page], per_page: 30)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -84,5 +85,10 @@ class UsersController < ApplicationController
 
   def fetch_user
     @user= User.find(params[:id])
+  end
+
+  def correct_user
+    user= User.find(params[:id])
+    redirect_to current_user, flash: { notice: "you don't have access buddy" } unless current_user==user
   end
 end

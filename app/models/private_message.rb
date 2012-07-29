@@ -1,9 +1,10 @@
 class PrivateMessage < ActiveRecord::Base
-  attr_accessible :body, :read_at, :title, :receiver_id
+  attr_accessible :body, :read_at, :title, :receiver_id, :sender_id, :conversation_id
   belongs_to :sender, class_name: 'User', foreign_key: 'sender_id'
   belongs_to :receiver, class_name: 'User', foreign_key: 'receiver_id'
   belongs_to :conversation, :class_name => 'PrivateMessage'  # Reference to parent message
-  has_many :replies,  :class_name => 'PrivateMessage', :foreign_key => 'conversation_id'
+  has_many :replies,  :class_name => 'PrivateMessage', :foreign_key => 'conversation_id',
+    order: 'created_at DESC'
   
 
   #named_scope :in_reply_to, lambda { |message| :conditions => { {:thread => message}, 
@@ -18,13 +19,10 @@ class PrivateMessage < ActiveRecord::Base
 
   validates :body, presence: true, length: { within: 6..1000 }
 
-  def self.is_new_conversation?(sender_id, receiver_id)
-  	sent_messages= where('sender_id= ? AND receiver_id= ?', sender_id, receiver_id)
-  	received_messages= where('sender_id= ? AND receiver_id= ?', receiver_id, sender_id)
-  	if sent_messages.nil? && received_messages.nil?
-  		return true
-  	end
-  	false
+  def self.current_conversation(sender_id, receiver_id)
+  	sent_messages= self.where('sender_id= ? AND receiver_id= ?', sender_id, receiver_id)
+  	received_messages= self.where('sender_id= ? AND receiver_id= ?', receiver_id, sender_id)
+  	return (sent_messages + received_messages)
   end
 
 

@@ -1,2 +1,19 @@
-<h1>Favorites#index</h1>
-<p>Find me in app/views/favorites/index.html.erb</p>
+<% title("Favorites for #{current_user.nick_name}") %>
+
+<% if @favorites.any? %>
+<h2>Your Favorites</h2>
+<ul class="profile_list">
+	<% @favorites.each_with_index do |f, i| %>
+	<li><%= render f.favoritee, i: i %></li>
+	<% end %>
+</ul>
+<% end %>
+
+<% if @favorited_by.any? %>
+<h2>Favorited By The Following Users: </h2>
+<ul class="profile_list">
+	<% @favorited_by.each_with_index do |f, i| %>
+	<li><%= render f.favoriter, i: i %></li>
+	<% end %>
+</ul>
+<% end %>

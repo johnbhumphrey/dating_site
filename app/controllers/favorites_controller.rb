@@ -1,4 +1,5 @@
 class FavoritesController < ApplicationController
+  before_filter :correct_user, only: [:index]
   def new
   end
 
@@ -33,4 +34,10 @@ class FavoritesController < ApplicationController
   		end	
   	end	
   end
+
+  private
+
+    def correct_user
+      redirect_to root_path unless current_user.profile
+    end
 end

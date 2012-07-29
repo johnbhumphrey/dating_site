@@ -90,7 +90,13 @@
     <%= f.label :exercise %><br />
     <%= f.select :exercise, Profile::EXERCISE_TYPES, prompt: 'Describe your exercise habits' %>
   </div>
+  <% if params[:action]== 'new' %>
   <div class="actions">
-    <%= f.submit 'Create Profile' %>
+    <%= f.submit 'asdfasdf Profile' %>
   </div>
+  <% else %>
+  <div class="actions">
+    <%= f.submit 'Update Profile' %>
+  </div>  
+  <% end %>
 <% end %>

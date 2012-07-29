@@ -1,19 +1,18 @@
-div.profile {
+.profile_0 {
 	margin: 5px 0 10px 0;
 }
 
-div.profile#type_1 {
-	background-color: #fff;
+.profile_1 {
+	background-color: rgb(245,245,245);
+	margin: 5px 0 10px 0;
 }
 
-div#type_0 {
-	background-color: red;
-}
 
 h3.message {
 	background: url(open.png) no-repeat 0 11px;
 	padding: 10px 0 0 25px;
 	cursor: pointer;
+	color: red;
 }
 
 h3.expanded {
@@ -25,6 +24,8 @@ textarea {
 	height: 200px;
 }
 
-span.user_name {
-	
+ul.profile_list > li {
+	list-style: none
 }
+
+

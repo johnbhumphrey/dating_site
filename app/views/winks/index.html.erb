@@ -1,2 +1,19 @@
-<h1>Winks#index</h1>
-<p>Find me in app/views/winks/index.html.erb</p>
+<% title("Winks for #{current_user.nick_name}") %>
+
+<% if @received_winks.any? %>
+<h2>All Received Winks</h2>
+<ul class="profile_list">
+	<% @received_winks.each_with_index do |f, i| %>
+	<li><%= render f.sender, i: i %></li>
+	<% end %>
+</ul>
+<% end %>
+
+<% if @sent_winks.any? %>
+<h2>All Sent Winks</h2>
+<ul class="profile_list">
+	<% @sent_winks.each_with_index do |f, i| %>
+	<li><%= render f.receiver, i: i %></li>
+	<% end %>
+</ul>
+<% end %>

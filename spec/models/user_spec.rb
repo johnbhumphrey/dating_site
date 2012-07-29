@@ -14,7 +14,7 @@ end
 #  admin           :boolean         default(FALSE)
 #  created_at      :datetime        not null
 #  updated_at      :datetime        not null
-#  profile_id      :integer
 #  nick_name       :string(255)
+#  remember_token  :string(255)
 #
 

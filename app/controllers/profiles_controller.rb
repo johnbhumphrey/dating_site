@@ -7,8 +7,7 @@ class ProfilesController < ApplicationController
   end
 
   def create
-    user= current_user
-    @profile= user.build_profile(params[:profile])
+    @profile= current_user.build_profile(params[:profile])
     @profile.nick_name= current_user.nick_name
     if @profile.save
       redirect_to @profile, flash: { success: "Successfully created profile." }
@@ -22,7 +21,7 @@ class ProfilesController < ApplicationController
     if @profile.update_attributes(params[:profile])
       redirect_to @profile, flash: { success: "Successfully updated profile "}
     else
-      render 'edit' 
+      render 'edit'
     end
   end
 
@@ -35,9 +34,8 @@ class ProfilesController < ApplicationController
   end
 
   def index
-    @profiles= Profile.where(hidden: false).all
-    @profiles.delete(current_user.profile)
-    @side_profiles= Profile.generate_random_profiles(@profiles)
+    @profiles= Profile.paginate(page: params[:page], per_page: 30).where(hidden: false)
+    @side_profiles= Profile.generate_random_profiles(@profiles.all)
   end
 
   def destroy

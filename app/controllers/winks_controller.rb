@@ -16,5 +16,7 @@ class WinksController < ApplicationController
   end
 
   def index
+    @received_winks= current_user.profile.received_winks
+    @sent_winks= current_user.profile.sent_winks
   end
 end

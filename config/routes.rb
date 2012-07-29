@@ -12,16 +12,16 @@ Dating::Application.routes.draw do
 
   resources :users
   resources :profiles do
-    resources :favorites, only: [:index, :new, :create, :destroy]
     resources :photos
-    resources :winks, only: [:index, :new, :create]
+    resources :favorites, only: [:new, :create, :destroy]
   end
-  
+  resources :favorites, only: [:index, :show]
+  resources :winks, only: [:index, :new, :create]
   resources :private_messages, only: [:create, :destroy, :show, :index]
     
 
   root to: 'pages#home'
-  match '*path' => redirect('/')   unless Rails.env.development?
+  #match '*path' => redirect('/')   unless Rails.env.development?
 
   #resources :profiles, :module: 'users' gives you /users/3/profile/edit etc but routes to profile/edit
   # The priority is based upon order of creation:

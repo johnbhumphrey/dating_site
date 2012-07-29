@@ -29,7 +29,6 @@ group :test, :development do
   gem 'webrat'
   gem 'annotate', '2.4.1.beta1'
   gem 'factory_girl_rails', '1.6.0'
-  gem 'faker', '0.3.1'
   gem 'mongrel', '>= 1.2.0.pre2'
   #gem #'linecache19'#,       '>= 0.5.13'
   #gem #'ruby-debug-base19'#, '>= 0.11.26'
@@ -41,6 +40,8 @@ gem "paperclip", "~> 3.0"
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'faker', '1.0.1'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

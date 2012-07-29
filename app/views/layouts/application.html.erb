@@ -44,8 +44,22 @@
             </ul>
             <ul class="nav pull-right">
               <% if signed_in? %>
-                <li><% if !current_user.profile.nil? %>
-                    <%= link_to "Messages", private_messages_path %></li>
+                <li>
+                  <% if !current_user.profile.nil? && current_user.profile.valid? %>
+                </li>
+                  <li class="dropdown" id="connections">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" 
+                      href="path/to/page.html">
+                      All Connections
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <%= link_to "View All Connections", '#' %>
+                      <%= link_to "Messages", private_messages_path %>
+                      <%= link_to "Your Favorites", favorites_path %>
+                      <%= link_to "Winks", winks_path %>
+                    </ul>
+                  </li>                          
                   <li class="dropdown" id="profile">
                     <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" 
                       href="path/to/page.html">
@@ -56,8 +70,7 @@
                       <%= link_to "View your profile", current_user.profile %>
                       <%= link_to "Edit your profile", edit_profile_path(current_user.profile) %>
                     </ul>
-                  </li>
-                    
+                  </li>            
                     <% else %>
                     <li><%= link_to "Create a Profile", new_profile_path %></li>
                     <% end %>

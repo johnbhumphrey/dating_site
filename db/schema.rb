@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120726144239) do
+ActiveRecord::Schema.define(:version => 20120729174924) do
 
   create_table "favorites", :force => true do |t|
     t.integer  "favoriter_id"
@@ -35,7 +35,6 @@ ActiveRecord::Schema.define(:version => 20120726144239) do
   end
 
   create_table "private_messages", :force => true do |t|
-    t.string   "title"
     t.text     "body"
     t.datetime "read_at"
     t.datetime "created_at",      :null => false
@@ -88,9 +87,11 @@ ActiveRecord::Schema.define(:version => 20120726144239) do
     t.boolean  "admin",           :default => false
     t.datetime "created_at",                         :null => false
     t.datetime "updated_at",                         :null => false
-    t.integer  "profile_id"
     t.string   "nick_name"
+    t.string   "remember_token"
   end
+
+  add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
 
   create_table "winks", :force => true do |t|
     t.integer  "sender_id"

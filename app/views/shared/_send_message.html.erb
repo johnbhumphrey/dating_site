@@ -1,0 +1,14 @@
+<h3 class= "message">Send a private message to <%= object.nick_name %></h3><br>
+<div class="send_message">
+<%= form_for PrivateMessage.new, html: { class: "well form-inline" } do |f| %>
+	<%= f.hidden_field :receiver_id, value: object.user_id %>
+	<%= f.hidden_field :sender_id, value: current_user.id %>
+  <div class="field">
+    <%= f.label :body, "Message Body" %><br />
+    <%= f.text_area :body, class: "input-xlarge" %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'Send Message!' %>
+  </div>
+<% end %>
+</div>

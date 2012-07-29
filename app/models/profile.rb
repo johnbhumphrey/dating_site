@@ -2,8 +2,8 @@ class Profile < ActiveRecord::Base
   attr_accessible :interested_in, :about_me, :age, :good_at, :location, :message_me_if, 
   	:relationship_status, :sex, :body_type, :height, :ethnicity, :smokes,
   	:drinks, :religion, :income, :job, :language, :drugs, :offspring, :exercise, :zipcode,
-    :formatted_height, :avatar
-  INTERESTED_TYPES= [ "Men", "Women", "Both" ]  
+    :formatted_height, :avatar, :nick_name
+  INTERESTED_TYPES= [ "Male", "Female", "Both" ]  
   RELATIONSHIP_TYPES = [ "Single", "Available", "Separated", "Divorced",
   		"Widower", "Married", "In a relationship" ]
   BODY_TYPES = [ "No Answer", "Heffer", "Used Up", "Athletic and Toned", "Skinny", 

@@ -1,20 +1,18 @@
 module SessionsHelper
 
 	def sign_in(user)
-		session[:user_id] = user.id
+		#session[:user]= user.id
+		cookies.permanent[:remember_token]= user.remember_token
 		self.current_user = user
 	end
 
 	def current_user
-		if session[:user_id]
-			@current_user ||= User.find(session[:user_id])
-		else
-			@current_user= nil
-		end
+		@current_user ||= User.find_by_remember_token(cookies[:remember_token])
+		#@current_user ||= User.find_by_id(session[:user])
 	end
 
 	def signed_in?
-	    !session[:user_id].nil?
+	    !current_user.nil?
     end
 
     def current_user= (user)
@@ -22,8 +20,9 @@ module SessionsHelper
 	end
 
 	def sign_out
-		session[:user_id] = nil
 		self.current_user = nil
+		#session[:user]= nil	
+		cookies.delete(:remember_token)
 	end
 	
 	def authenticate

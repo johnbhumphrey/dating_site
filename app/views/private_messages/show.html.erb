@@ -1,16 +1,39 @@
-<% title("Conversation with #{@sender.nick_name}") %>
+<% title("Conversation with #{@other_user.nick_name}") %>
+<% sidebar_main_title("Details: #{@other_user.nick_name}") %>
+<% sidebar_sub_title("#{@other_user.age} / #{@other_user.sex} /
+#{@other_user.zipcode} /  #{@other_user.relationship_status}") %>
+<%= render 'shared/profile_info', object: @other_user %>
 
-<% sidebar_main_title("Details: #{@sender.nick_name}") %>
-<% sidebar_sub_title("#{@sender.age} / #{@sender.sex} /
-#{@sender.zipcode} /  #{@sender.relationship_status}") %>
-<%= render 'shared/profile_info', object: @sender %>
 
 <p class="profile">
-	<h3>Message from <%= @sender.nick_name %></h3><br>
-	<h5><%= @current_message.title %></h5>
+	<h3>Conversation with <%= @other_user.nick_name %> 
+		<%= link_to display_main_photo_thumb(@other_user), @other_user %>
+	</h3><br>
 </p>
-<p class="profile">
-	<span class="message_body"><%= @current_message.body %></span>
-</p>
-
+<ul class="profile_messages">	
+	<p class="profile">
+		<% @current_message.replies.each do |f| %>
+		<li>
+			<div class="message_body">
+				<span class="message_photo">
+				<%= link_to display_main_photo_thumb(f.sender.profile), f.sender.profile %>
+				</span>
+				<div class="message_body"><%= f.body %></div>
+				<div class="time_stamp"><%= f.created_at %></div>
+			</div>
+		</li><br>	
+		<% end %>
+		<li>
+			<div class="message_body">
+				<span class="message_photo">
+				<%= link_to display_main_photo_thumb(@current_message.sender.profile), 
+					@current_message.sender %>
+				</span>
+				<div class="message_body"><%= @current_message.body %></div>
+				<div class="time_stamp"><%= @current_message.created_at %></div>
+			</div>
+		</li><br>	
+	</p>
+	<%= render 'shared/send_message', object: @other_user %>
+</ul>
 
