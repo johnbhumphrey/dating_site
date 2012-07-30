@@ -38,7 +38,10 @@ class FavoritesController < ApplicationController
   private
 
     def must_have_profile
-      redirect_to root_path unless current_user.profile, flash: { error: "No permission to do that bra" }
+      unless current_user.profile
+        redirect_to root_path 
+        flash[:error]= "No permission to do that bra" 
+      end
     end
 
     def must_be_right_user

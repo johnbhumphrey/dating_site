@@ -20,9 +20,13 @@ class PrivateMessage < ActiveRecord::Base
   validates :body, presence: true, length: { within: 6..1000 }
 
   def self.current_conversation(sender_id, receiver_id)
-  	sent_messages= self.where('sender_id= ? AND receiver_id= ?', sender_id, receiver_id)
-  	received_messages= self.where('sender_id= ? AND receiver_id= ?', receiver_id, sender_id)
-  	return (sent_messages + received_messages)
+  	messages= sent_messages= self.where('sender_id= ? AND receiver_id= ?', sender_id, receiver_id) +
+  	 received_messages= self.where('sender_id= ? AND receiver_id= ?', receiver_id, sender_id)
+    unless messages.nil?
+      i= (sent_messages+ received_messages).index { |f| f.conversation_id==nil }
+    	return messages[i] unless i.nil?
+    end
+    return nil  
   end
 
 

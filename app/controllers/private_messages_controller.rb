@@ -26,7 +26,7 @@ class PrivateMessagesController < ApplicationController
 
   def create
     convo= PrivateMessage.current_conversation(current_user.id, params[:private_message][:receiver_id])
-    if convo.empty?
+    if convo.nil?
       message= current_user.sent_messages.build(params[:private_message])
       if message.save
         redirect_to message, flash: { success: "Sent message successfully" }
@@ -35,7 +35,7 @@ class PrivateMessagesController < ApplicationController
             { error: "Could not create the message, please try again" }
       end
     else
-      message= convo.last.replies.create!(params[:private_message])
+      message= convo.replies.create!(params[:private_message])
       redirect_to message
     end
 
