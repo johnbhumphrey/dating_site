@@ -27,7 +27,7 @@
 			<div class="message_body">
 				<span class="message_photo">
 				<%= link_to display_main_photo_thumb(@current_message.sender.profile), 
-					@current_message.sender %>
+					@current_message.sender.profile %>
 				</span>
 				<div class="message_body"><%= @current_message.body %></div>
 				<div class="time_stamp"><%= @current_message.created_at %></div>

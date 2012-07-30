@@ -19,8 +19,8 @@ class PrivateMessagesController < ApplicationController
   end
 
   def index
-  	@sent_messages= PrivateMessage.where('sender_id=?', current_user.id).all
-  	@received_messages= PrivateMessage.where('receiver_id=?', current_user.id).all
+  	@sent_messages= current_user.sent_messages.all
+  	@received_messages= current_user.received_messages.all
     @messages= @sent_messages+ @received_messages
   end
 
@@ -31,7 +31,8 @@ class PrivateMessagesController < ApplicationController
       if message.save
         redirect_to message, flash: { success: "Sent message successfully" }
       else
-        redirect_to Profile.find(params[:private_message][:profile_id])
+        redirect_to Profile.find(params[:private_message][:receiver_id]), flash: 
+            { error: "Could not create the message, please try again" }
       end
     else
       message= convo.last.replies.create!(params[:private_message])
@@ -50,4 +51,5 @@ class PrivateMessagesController < ApplicationController
         redirect_to new_profile_path, flash: { notice: "Please create a profile to view other profiles."}
       end
     end
+
 end

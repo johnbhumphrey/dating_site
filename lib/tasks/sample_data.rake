@@ -35,5 +35,9 @@ namespace :db do
           offspring: "No Answer", income: "No Answer", religion: "No Answer",
           language: "No Answer", ethnicity: "No Answer", nick_name: f.nick_name)
     end
+
+    user= User.first
+    users= User.all
+    
   end
 end

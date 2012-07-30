@@ -1,0 +1,28 @@
+<% if @viewed_profiles.empty? %>
+<h2>You haven't viewed anyone yet :(</h2><br>
+<% else %>
+<%= will_paginate @viewed_profiles %>
+<h2>You have viewed the following profiles: </h2><br>
+	<ul>
+	<% @viewed_profiles.each_with_index do |f, i| %>
+		<li><%= render f.viewed, i: i %> 
+			Last viewed <%= distance_of_time_in_words(f.created_at, Time.now.utc) %> ago
+		</li>
+	<% end %>
+	</ul>
+<% end %>
+<%= will_paginate @viewed_profiles %>
+
+<% if @viewed_by.empty? %>
+<h2>You haven't been viewed by anyone yet :(</h2><br>
+<% else %>
+<h2>You have been viewed the following profiles: </h2><br>
+	<ul>
+	<% @viewed_by.each_with_index do |f, i| %>
+		<li><%= render f.viewer, i: i %> 
+		Last viewed <%= distance_of_time_in_words(f.created_at, Time.now.utc) %> ago
+		</li>
+	<% end %>
+	</ul>
+<% end %>
+

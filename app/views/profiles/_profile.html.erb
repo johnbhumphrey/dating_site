@@ -1,16 +1,16 @@
 <div class="profile_<%= i%2 %>" id="id_<%= profile.id %>">
   <div class="profile_info">
     <div class="image_thumbnail">
-    <% if profile.has_main_photo? %>
-      <%= link_to image_tag(profile.main_photo.avatar.url(:thumb)), profile %>
-    <% else %>
-      <%= link_to image_tag('nopicture.png'), profile %>
-    <% end %>
+    <%= display_main_photo_thumb(profile) %>
     </div>
     <div class="user_name"><%= link_to profile.nick_name, profile %></div>
     <div class="short_bio">
       <%= profile.age %> / <%= profile.sex %> / <%= profile.zipcode %>
     </div>
+    <% if current_user.admin? %>
+      <%= link_to "Delete #{profile.nick_name}", profile, method: :delete, 
+          class: "btn btn-danger btn-small", confirm: "Are you sure?,", remote: true %>
+    <% end %>
   </div>
   <div class= "about_me"><%= truncate(profile.about_me, length: 500) %></div>
 </div>

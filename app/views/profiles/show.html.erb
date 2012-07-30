@@ -10,6 +10,10 @@
 <% if current_user.profile == @profile %>
 	(<%= link_to "Edit your photos", edit_profile_photo_path([@profile]) %>)
 <% else %>
+    <% if current_user.admin? %>
+      <%= link_to "Delete #{@profile.nick_name}", @profile, method: :delete, 
+          class: "btn btn-danger btn-small", confirm: "Are you sure?" %>
+    <% end %>
 	<% if !current_user.profile.sent_wink?(@profile.id) %>
 	<span class="new_wink">
 		<%= render 'shared/send_wink', object: @profile %>

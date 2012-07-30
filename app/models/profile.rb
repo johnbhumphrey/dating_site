@@ -56,7 +56,15 @@ class Profile < ActiveRecord::Base
   has_many :favorites, class_name: 'Favorite', foreign_key: 'favoriter_id',
       dependent: :destroy
   has_many :favorited_by, class_name: 'Favorite', foreign_key: 'favoritee_id',
-      dependent: :destroy      
+      dependent: :destroy  
+
+  has_many :views, class_name: "View", foreign_key: "viewer_id", 
+      dependent: :destroy
+  has_many :reverse_views, class_name: "View", foreign_key: "viewed_id", 
+      dependent: :destroy
+  has_many :viewed_profiles, through: :views, source: :viewed
+  has_many :viewed_by, through: :reverse_views, source: :viewer   
+
       
   belongs_to :user
 

@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
   skip_before_filter :authenticate, only: [ :new, :create ]
   before_filter :fetch_user, except: [ :index, :new, :create ]
-  before_filter :correct_user, only: [ :destroy, :update, :edit ]
+  before_filter :correct_user, only: [ :update, :edit ]
+  before_filter :admin_user, only: [ :destroy ]
   # GET /users
   # GET /users.json
   def index
@@ -90,5 +91,9 @@ class UsersController < ApplicationController
   def correct_user
     user= User.find(params[:id])
     redirect_to current_user, flash: { notice: "you don't have access buddy" } unless current_user==user
+  end
+
+  def admin_user
+    redirect_to root_url, flash: { error: "You can't do that" } unless current_user.admin?
   end
 end

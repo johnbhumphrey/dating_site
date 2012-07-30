@@ -1,6 +1,7 @@
 class ProfilesController < ApplicationController
   before_filter :must_have_profile, only: [ :update, :show, :edit, :index ]
-  before_filter :must_be_own_profile, only: [ :update, :edit, :destroy ]
+  before_filter :must_be_own_profile, only: [ :update, :edit ]
+  before_filter :admin_user_or_own_profile, only: [:destroy]
   
   def new
     @profile= Profile.new
@@ -27,6 +28,7 @@ class ProfilesController < ApplicationController
 
   def show
     @profile= Profile.find(params[:id])
+    current_user.profile.views.create!(viewed_id: @profile.id) unless @profile==current_user.profile
   end
 
   def edit
@@ -39,9 +41,11 @@ class ProfilesController < ApplicationController
   end
 
   def destroy
-    @profile= Profile.find(params[:id])
     @profile.destroy
-    redirect_to profiles_path, flash: { success: "Successfully deleted profile." }
+    respond_to do |f|
+      f.js {}
+      f.html { redirect_to profiles_path, flash: { success: "Successfully deleted profile." } }
+    end  
   end
 
   private
@@ -57,6 +61,13 @@ class ProfilesController < ApplicationController
       unless current_user.profile == @profile
         redirect_to root_path
         flash[:error]= "Get the fuck out of here"
+      end
+    end
+
+    def admin_user_or_own_profile
+      @profile= Profile.find(params[:id])
+      unless current_user.admin? || current_user.profile==@profile
+        redirect_to root_path, flash: { error: "You don't have permission to do that" }
       end
     end
 end

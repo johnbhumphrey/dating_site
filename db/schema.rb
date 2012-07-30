@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120729174924) do
+ActiveRecord::Schema.define(:version => 20120730154624) do
 
   create_table "favorites", :force => true do |t|
     t.integer  "favoriter_id"
@@ -92,6 +92,16 @@ ActiveRecord::Schema.define(:version => 20120729174924) do
   end
 
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
+
+  create_table "views", :force => true do |t|
+    t.integer  "viewer_id"
+    t.integer  "viewed_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "views", ["viewed_id"], :name => "index_views_on_viewed_id"
+  add_index "views", ["viewer_id"], :name => "index_views_on_viewer_id"
 
   create_table "winks", :force => true do |t|
     t.integer  "sender_id"

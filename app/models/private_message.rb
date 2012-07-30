@@ -32,7 +32,6 @@ end
 # Table name: private_messages
 #
 #  id              :integer         not null, primary key
-#  title           :string(255)
 #  body            :text
 #  read_at         :datetime
 #  created_at      :datetime        not null

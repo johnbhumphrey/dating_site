@@ -1,5 +1,6 @@
 class FavoritesController < ApplicationController
-  before_filter :correct_user, only: [:index]
+  before_filter :must_have_profile
+  before_filter :must_be_right_user, only: [ :destroy ]
   def new
   end
 
@@ -23,7 +24,6 @@ class FavoritesController < ApplicationController
 
   def destroy
   	@profile= Profile.find(params[:profile_id])
-  	@favorite= Favorite.find(params[:id])
   	#@favorite= current_user.profile.favorites.find_by_favoritee_id(params[:profile_id])
   	respond_to do |f|
   		if @favorite.destroy
@@ -37,7 +37,12 @@ class FavoritesController < ApplicationController
 
   private
 
-    def correct_user
-      redirect_to root_path unless current_user.profile
+    def must_have_profile
+      redirect_to root_path unless current_user.profile, flash: { error: "No permission to do that bra" }
+    end
+
+    def must_be_right_user
+      @favorite= Favorite.find(params[:id])
+      redirect_to root_path unless current_user.profile.favorites.include?(@favorite)
     end
 end
