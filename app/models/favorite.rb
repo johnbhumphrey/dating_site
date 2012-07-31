@@ -5,6 +5,8 @@ class Favorite < ActiveRecord::Base
 
   validates_uniqueness_of :favoritee_id, scope: :favoriter_id
 
+
+  default_scope order: 'favorites.created_at DESC'
 end
 # == Schema Information
 #

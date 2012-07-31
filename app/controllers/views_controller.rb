@@ -12,9 +12,9 @@ class ViewsController < ApplicationController
   end
 
   def index
-  	@viewed_profiles= current_user.profile.views.uniq_by { |f| f[:viewed_id] }.scoped
+  	@viewed_profiles= current_user.profile.views.uniq_by { |f| f[:viewed_id] }
   	@viewed_by= current_user.profile.reverse_views.uniq_by { |f| f[:viewer_id] }
-  	@viewed_profiles= @viewed_profiles.paginate(per_page: 5)
+  	@viewed_profiles= @viewed_profiles.paginate(page: params[:page], per_page: 5)
   end
 
   private

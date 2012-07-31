@@ -13,7 +13,7 @@
 <h2>All Sent Winks</h2>
 <ul class="profile_list">
 	<% @sent_winks.each_with_index do |f, i| %>
-	<li><%= render f.receiver, i: i %></li>
+	<li><%= render f.receiver, i: i unless f.nil? %></li>
 	<% end %>
 </ul>
 <% end %>

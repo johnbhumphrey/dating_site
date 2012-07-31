@@ -7,7 +7,7 @@
     <% if content_for?(:title) %>
       <%= yield(:title) %>
     <% else %>
-      Dating Site Central
+      No Fat Chicks
     <% end %></title>
     <%= csrf_meta_tags %>
 
@@ -58,6 +58,7 @@
                       <%= link_to "Messages", private_messages_path %>
                       <%= link_to "Your Favorites", favorites_path %>
                       <%= link_to "Winks", winks_path %>
+                      <%= link_to "Profiles Viewed", profile_views_path(current_user.profile) %>
                     </ul>
                   </li>                          
                   <li class="dropdown" id="profile">
