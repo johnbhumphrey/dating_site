@@ -1,7 +1,7 @@
 <div class="profile_<%= i%2 %>" id="id_<%= profile.id %>">
   <div class="profile_info">
     <div class="image_thumbnail">
-    <%= display_main_photo_thumb(profile) %>
+    <%= link_to display_main_photo_thumb(profile), profile %>
     </div>
     <div class="user_name"><%= link_to profile.nick_name, profile %></div>
     <div class="short_bio">

@@ -81,13 +81,13 @@ class Profile < ActiveRecord::Base
 
   def self.generate_random_profiles(profiles)
     size= profiles.count
-    size > 3 ? count = 3 : count = size
+    size > 3 ? count=3 : count = size
     x= 0
     matches = []
     while (x < count)
-      number= Random.rand(1..count)
-      if !matches.include?(number)
-        matches << number
+      number= Random.rand(0..size-1)
+      if !matches.include?(profiles[number])
+        matches << profiles[number]
         x+=1
       end  
     end  

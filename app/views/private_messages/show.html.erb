@@ -19,7 +19,7 @@
 				<%= link_to display_main_photo_thumb(f.sender.profile), f.sender.profile %>
 				</span>
 				<div class="message_body"><%= f.body %></div>
-				<div class="time_stamp">Sent <%= distance_of_time_in_words(f.created_at, Time.now.utc) %></div>
+				<div class="time_stamp">Sent <%= distance_of_time_in_words(f.created_at, Time.now.utc) %> ago.</div>
 			</div>
 		</li><br>	
 		<% end %>
@@ -30,7 +30,7 @@
 					@current_message.sender.profile %>
 				</span>
 				<div class="message_body"><%= @current_message.body %></div>
-				<div class="time_stamp">Sent <%= distance_of_time_in_words(@current_message.created_at, Time.now.utc) %></div>
+				<div class="time_stamp">Sent <%= distance_of_time_in_words(@current_message.created_at, Time.now.utc) %> ago.</div>
 			</div>
 		</li><br>	
 	</p>

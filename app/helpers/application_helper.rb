@@ -11,4 +11,12 @@ module ApplicationHelper
 		content_for(:sidebar_sub_title) { title }
 	end
 
+	def sidebar2_main_title(title)
+		content_for(:sidebar2_main_title) { title }
+	end
+
+	def sidebar2_sub_title(title)
+		content_for(:sidebar2_sub_title) { title }
+	end
+
 end

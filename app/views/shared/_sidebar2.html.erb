@@ -1,8 +1,8 @@
 <div class="span3">
   <div class="well sidebar-nav">
-    <h3>Sidebar 2:  The better sidebar</h3>
+    <h3><%= content_for?(:sidebar2_main_title) ? yield(:sidebar2_main_title) : "Sidebar 2" %></h3>
     <ul class="nav nav-list">
-      <li class="nav-header">Sidebar</li>
+      <li class="nav-header"><%= content_for?(:sidebar2_sub_title) ? yield(:sidebar2_sub_title) : "Sidebar2 subtitle" %></li>
         <%= yield :sidebar2 %>
     </ul>
   </div><!--/.well -->

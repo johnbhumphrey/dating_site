@@ -23,8 +23,8 @@ class User < ActiveRecord::Base
 
   after_destroy :ensure_an_admin_remains
 
-  def feed
-    current_user.profile
+  def news_feed
+    profile
   end
 
   private
