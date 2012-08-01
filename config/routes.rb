@@ -25,6 +25,7 @@ Dating::Application.routes.draw do
   resources :favorites, only: [:index, :show]
   resources :winks, only: [:index, :new, :create]
   resources :private_messages, only: [:create, :destroy, :show, :index]
+  resources :searches, only: [ :show, :create, :new ]
     
 
   root to: 'pages#home'

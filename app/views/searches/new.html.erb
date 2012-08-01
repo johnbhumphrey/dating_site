@@ -1,0 +1,24 @@
+<h1>Advanced Search</h1>
+
+<%= form_for @search do |f| %>
+  <div class="field">
+    <%= f.label :keywords %><br />
+    <%= f.text_field :keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :interested_in %><br />
+    <%= f.select :interested_in, Profile::INTERESTED_TYPES, prompt: 'Select a sex in which you are interested' %>
+  </div>
+  <div class="field">
+    <%= f.label :min_age, "Age Range" %><br />
+    <%= f.text_field :min_age, size: 10 %> -
+    <%= f.text_field :max_age, size: 10 %>
+  </div>
+  <div class="field">
+    <%= f.label :min_height, "Height Range (in inches)" %><br />
+    <%= f.text_field :min_height, size: 10 %> -
+    <%= f.text_field :max_height, size: 10 %>
+  </div>  
+  <div class="actions"><%= f.submit "Search" %></div>
+<% end %>
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120730154624) do
+ActiveRecord::Schema.define(:version => 20120801193153) do
 
   create_table "favorites", :force => true do |t|
     t.integer  "favoriter_id"
@@ -78,6 +78,19 @@ ActiveRecord::Schema.define(:version => 20120730154624) do
     t.datetime "avatar_updated_at"
     t.boolean  "hidden",              :default => false
     t.boolean  "new_user"
+  end
+
+  create_table "searches", :force => true do |t|
+    t.string   "keywords"
+    t.integer  "min_age"
+    t.integer  "max_age"
+    t.integer  "min_height"
+    t.integer  "max_height"
+    t.string   "sex"
+    t.string   "relationship_status"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.string   "interested_in"
   end
 
   create_table "users", :force => true do |t|
