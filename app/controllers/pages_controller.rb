@@ -4,6 +4,9 @@ class PagesController < ApplicationController
   	if signed_in? && current_user.profile
   		@feed_items= current_user.news_feed
 	  	@viewed_count= current_user.profile.viewed_by.count
+      @favorited_by_count= current_user.profile.favorited_by.count
+      @search = Search.where("profile_id= ? AND save_search= ?", current_user.profile, true)
+      @search.any? ? @search= @search.last : @search= Search.new
   	end
   	@new_members= Profile.generate_random_profiles(Profile.limit(15))
   end

@@ -17,5 +17,8 @@ end
 #  relationship_status :string(255)
 #  created_at          :datetime        not null
 #  updated_at          :datetime        not null
+#  interested_in       :string(255)
+#  save_search         :boolean         default(FALSE)
+#  profile_id          :integer
 #
 

@@ -6,12 +6,22 @@ class SearchesController < ApplicationController
   end
 
   def create
-  	@search= Search.create!(params[:search])
+  	@search= current_user.profile.searches.create!(params[:search])
   	redirect_to @search
   end
 
   def show
   	@search= Search.find(params[:id])
+  end
+
+  def update
+    @search= Search.find(params[:id])
+    if @search.update_attributes(params[:search])
+      redirect_to @search, flash: { notice: "Here are your search results" }
+    else
+      redirect_to root_url, flash: { error: "Could not complete search, here's a cookie" }
+    end  
+
   end
 
   private

@@ -1,0 +1,1094 @@
+2012-08-02 11:27:30[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:30[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:35[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:35[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:37[WARN] user: csahlman
+dev:3000/private_messages/1
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:19:in `block in _app_views_private_messages_show_html_erb___886812631_94477610'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:15:in `_app_views_private_messages_show_html_erb___886812631_94477610'2012-08-02 11:27:38[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:38[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:44[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:44[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:46[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:46[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:47[WARN] user: csahlman
+dev:3000/private_messages/1
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:19:in `block in _app_views_private_messages_show_html_erb___886812631_94477610'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:15:in `_app_views_private_messages_show_html_erb___886812631_94477610'2012-08-02 11:27:50[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:27:50[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:31:11[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:31:11[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:31:13[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:31:13[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89446360'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89446360'2012-08-02 11:38:25[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89718890'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89718890'2012-08-02 11:38:25[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89718890'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89718890'2012-08-02 11:38:25[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:38:31[WARN] user: csahlman
+dev:3000/private_messages/1
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:19:in `block in _app_views_private_messages_show_html_erb___886812631_94477610'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:15:in `_app_views_private_messages_show_html_erb___886812631_94477610'2012-08-02 11:38:36[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89718890'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89718890'2012-08-02 11:38:36[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89718890'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89718890'2012-08-02 11:38:36[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:39:19[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89718890'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89718890'2012-08-02 11:39:19[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89718890'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89718890'2012-08-02 11:39:19[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:40:01[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89718890'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89718890'2012-08-02 11:40:01[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_89718890'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89718890'2012-08-02 11:40:01[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:40:33[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_95720590'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95720590'2012-08-02 11:40:33[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_95720590'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95720590'2012-08-02 11:40:33[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:41:02[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_96224240'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_96224240'2012-08-02 11:41:02[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_96224240'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_96224240'2012-08-02 11:41:02[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:41:38[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_96224240'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_96224240'2012-08-02 11:41:38[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_96224240'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_96224240'2012-08-02 11:41:38[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_96224240'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_96224240'2012-08-02 11:41:38[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:42:37[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:42:37[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:42:37[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:42:37[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:42:39[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:42:39[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:42:39[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:42:39[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:42:46[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:42:46[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:42:46[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:42:46[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:43:32[WARN] user: csahlman
+dev:3000/private_messages/1
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:19:in `block in _app_views_private_messages_show_html_erb___886812631_94477610'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:15:in `_app_views_private_messages_show_html_erb___886812631_94477610'2012-08-02 11:43:42[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:43:42[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:43:42[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_90445560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_90445560'2012-08-02 11:43:42[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:45:42[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_86581820'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_86581820'2012-08-02 11:45:42[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_86581820'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_86581820'2012-08-02 11:45:42[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_86581820'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_86581820'2012-08-02 11:45:42[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:45:56[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_87995060'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_87995060'2012-08-02 11:45:56[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_87995060'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_87995060'2012-08-02 11:45:56[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_87995060'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_87995060'2012-08-02 11:45:56[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:46:04[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_93714650'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_93714650'2012-08-02 11:46:04[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_93714650'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_93714650'2012-08-02 11:46:04[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_93714650'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_93714650'2012-08-02 11:46:04[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:48:50[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_95688560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95688560'2012-08-02 11:48:50[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_95688560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95688560'2012-08-02 11:48:50[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_95688560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95688560'2012-08-02 11:48:50[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:50:08[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_95688560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95688560'2012-08-02 11:50:08[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_95688560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95688560'2012-08-02 11:50:08[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_95688560'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95688560'2012-08-02 11:50:08[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:58:36[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_88984150'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_88984150'2012-08-02 11:58:36[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_88984150'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_88984150'2012-08-02 11:58:36[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 11:58:36[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  User => [:profile]
+  Add to your finder: :include => [:profile]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_88984150'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_88984150'2012-08-02 11:58:39[WARN] user: csahlman
+dev:3000/private_messages/1
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:19:in `block in _app_views_private_messages_show_html_erb___886812631_94477610'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:15:in `_app_views_private_messages_show_html_erb___886812631_94477610'2012-08-02 11:59:12[WARN] user: csahlman
+dev:3000/private_messages/1
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:19:in `block in _app_views_private_messages_show_html_erb___886812631_94477610'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:15:in `_app_views_private_messages_show_html_erb___886812631_94477610'2012-08-02 11:59:26[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_91708400'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_91708400'2012-08-02 11:59:26[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  User => [:profile]
+  Add to your finder: :include => [:profile]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_91708400'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_91708400'2012-08-02 11:59:26[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 12:03:14[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_98905650'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_98905650'2012-08-02 12:03:14[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  User => [:profile]
+  Add to your finder: :include => [:profile]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_98905650'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_98905650'2012-08-02 12:03:14[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 12:03:14[WARN] user: csahlman
+dev:3000/private_messages
+Unused Eager Loading detected
+  PrivateMessage => [:profile]
+  Remove from your finder: :include => [:profile]2012-08-02 12:04:47[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_94896990'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_94896990'2012-08-02 12:04:47[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  User => [:profile]
+  Add to your finder: :include => [:profile]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_94896990'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_94896990'2012-08-02 12:04:47[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 12:05:21[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_89468230'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_89468230'2012-08-02 12:05:21[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 12:06:44[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 12:07:13[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:conversation]
+  Add to your finder: :include => [:conversation]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:8:in `block in _app_views_private_messages_index_html_erb___991424553_95049990'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95049990'2012-08-02 12:07:13[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:4:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_95049990'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95049990'2012-08-02 12:07:13[WARN] user: csahlman
+dev:3000/private_messages
+N+1 Query detected
+  PrivateMessage => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/helpers/private_messages_helper.rb:5:in `other_profile'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:9:in `block in _app_views_private_messages_index_html_erb___991424553_95049990'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/index.html.erb:7:in `_app_views_private_messages_index_html_erb___991424553_95049990'2012-08-02 12:07:13[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 12:07:36[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 12:09:43[WARN] user: csahlman
+dev:3000/private_messages/1
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:19:in `block in _app_views_private_messages_show_html_erb___886812631_94477610'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:15:in `_app_views_private_messages_show_html_erb___886812631_94477610'2012-08-02 12:09:43[WARN] user: csahlman
+dev:3000/private_messages
+Need Counter Cache
+  PrivateMessage => [:replies]2012-08-02 12:09:44[WARN] user: csahlman
+dev:3000/private_messages/1
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:19:in `block in _app_views_private_messages_show_html_erb___886812631_94477610'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:15:in `_app_views_private_messages_show_html_erb___886812631_94477610'2012-08-02 12:10:00[WARN] user: csahlman
+dev:3000/private_messages/1
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:19:in `block in _app_views_private_messages_show_html_erb___886812631_94477610'
+  /home/csahlman/railsProjects/dating_site/app/views/private_messages/show.html.erb:15:in `_app_views_private_messages_show_html_erb___886812631_94477610'2012-08-02 13:14:26[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:14:26[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:14:36[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:14:36[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:14:36[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:14:36[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:14:41[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:14:41[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:14:41[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:14:41[WARN] user: csahlman
+dev:3000/profiles/1/views
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'

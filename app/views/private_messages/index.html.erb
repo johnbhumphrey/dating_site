@@ -1,13 +1,14 @@
-<% if @messages.empty? %>
+<% if !@messages.any? %>
 	<h2>:( You don't have any conversations in your inbox.  Why don't you message someone?</h2>
 <% else %>
 
 <h2>All Conversations</h2>
 <ul class="conversations">
-<% @messages.each do |f| %>
+<% @messages.includes({sender: :profile }, { receiver: :profile }, :conversation ).each do |f| %>
 	<% if f.conversation.nil? %>
-	<li><%= display_main_photo_thumb(f.sender.profile) %> 
-		<%= link_to truncate(f.body, length: 30), f %>
+	<li><%= link_to display_main_photo_thumb(other_profile(f)), f %> 
+		<%= link_to truncate(last_reply(f).body, length: 30), f %>
+		Last communication: <%= time_ago_in_words(last_reply(f).created_at) %> ago.
 	</li>
 	<% end %>
 <% end %>

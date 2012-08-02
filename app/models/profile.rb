@@ -65,6 +65,7 @@ class Profile < ActiveRecord::Base
       dependent: :destroy
   has_many :viewed_profiles, through: :views, source: :viewed
   has_many :viewed_by, through: :reverse_views, source: :viewer   
+  has_many :searches, dependent: :destroy
 
       
   belongs_to :user

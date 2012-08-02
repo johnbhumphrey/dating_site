@@ -1,0 +1,25 @@
+<%= form_for object do |f| %>
+  <div class="field">
+    <%= f.label :keywords %><br />
+    <%= f.text_field :keywords %>
+  </div>
+  <div class="field">
+    <%= f.label :interested_in %><br />
+    <%= f.select :interested_in, Profile::INTERESTED_TYPES, prompt: 'Select a sex in which you are interested' %>
+  </div>
+  <div class="field">
+    <%= f.label :min_age, "Age Range" %><br />
+    <%= f.select :min_age, 18..35, { include_blank: true }, { class: "number_select" } %> -
+    <%= f.select :max_age, 18..35, { include_blank: true }, { class: "number_select" } %>
+  </div>
+  <div class="field">
+    <%= f.label :min_height, "Height Range (in inches)" %><br />
+    <%= f.select :min_height, 40..90, { include_blank: true }, { class: "number_select" } %> -
+    <%= f.select :max_height, 40..90, { include_blank: true }, { class: "number_select", selected: 35 } %>
+  </div>  
+  <div class="field">
+    <%= f.check_box :save_search %> Save Preferences?
+  </div>
+  <div class="actions"><%= f.submit "Search" %></div>
+<% end %>
+

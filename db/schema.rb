@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120801193153) do
+ActiveRecord::Schema.define(:version => 20120802141106) do
 
   create_table "favorites", :force => true do |t|
     t.integer  "favoriter_id"
@@ -88,10 +88,14 @@ ActiveRecord::Schema.define(:version => 20120801193153) do
     t.integer  "max_height"
     t.string   "sex"
     t.string   "relationship_status"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
     t.string   "interested_in"
+    t.boolean  "save_search",         :default => false
+    t.integer  "profile_id"
   end
+
+  add_index "searches", ["save_search"], :name => "index_searches_on_save_search"
 
   create_table "users", :force => true do |t|
     t.string   "name"

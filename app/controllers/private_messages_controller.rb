@@ -19,9 +19,8 @@ class PrivateMessagesController < ApplicationController
   end
 
   def index
-  	@sent_messages= current_user.sent_messages.all
-  	@received_messages= current_user.received_messages.all
-    @messages= @sent_messages+ @received_messages
+    @messages= PrivateMessage.where("sender_id= ? OR receiver_id= ?", current_user.profile.id,
+        current_user.profile.id)
   end
 
   def create

@@ -42,6 +42,8 @@ gem "paperclip", "~> 3.0"
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'faker', '1.0.1'
 gem 'bootstrap-will_paginate', '0.0.6'
+gem 'quiet_assets', :group => :development
+gem "bullet", :group => "development"
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

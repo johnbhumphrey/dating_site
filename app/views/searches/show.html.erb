@@ -1,6 +1,11 @@
+<% title("Search results") %>
 
-
+<% if @search.profiles.nil? %>
+<h1>Search returned no results.  :(</h1>
+<% else %>
 <h1>Search Results: Found <%= @search.profiles.count %> profiles. </h1>
 
 <%= render @search.profiles, i: 0 %>
+
+<% end %>
 

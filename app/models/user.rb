@@ -24,7 +24,11 @@ class User < ActiveRecord::Base
   after_destroy :ensure_an_admin_remains
 
   def news_feed
-    profile
+    feed_items= sent_messages.limit(5).all + received_messages.limit(5).all
+    feed_items+= profile.favorites.limit(5).all + profile.favorited_by.limit(5).all
+    feed_items+= profile.sent_winks.limit(5).all + profile.received_winks.limit(5).all
+    feed_items+= profile.views.limit(25).all + profile.reverse_views.limit(5).all
+    feed_items.sort_by {|f| f.created_at}
   end
 
   private
