@@ -5,7 +5,7 @@
   </div>
   <div class="field">
     <%= f.label :interested_in %><br />
-    <%= f.select :interested_in, Profile::INTERESTED_TYPES, prompt: 'Select a sex in which you are interested' %>
+    <%= f.select :interested_in, Profile::INTERESTED_TYPES, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :min_age, "Age Range" %><br />

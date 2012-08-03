@@ -1,11 +1,22 @@
 <% title("Search results") %>
+<% sidebar_main_title("Preferences Form") %>
+<% sidebar_sub_title("Select criteria") %>
+<% sidebar2_main_title("Newest members that fit your criteria") %>
+<% sidebar2_sub_title("greet them kindly!") %>
+<% content_for :sidebar do %>
+	<%= render 'shared/search', object: @search %>
+<% end %>
 
 <% if @search.profiles.nil? %>
 <h1>Search returned no results.  :(</h1>
 <% else %>
-<h1>Search Results: Found <%= @search.profiles.count %> profiles. </h1>
+<h1>Search Results: Found <%= @profiles.count %> profiles. </h1>
 
-<%= render @search.profiles, i: 0 %>
+<%= will_paginate @profiles %>
+
+<%= render @profiles, i: 0 %>
+
+<%= will_paginate @profiles %>
 
 <% end %>
 

@@ -1,18 +1,18 @@
 <% title("Winks for #{current_user.nick_name}") %>
 
-<% if @received_winks.any? %>
+<% if current_user.profile.received_winks.any? %>
 <h2>All Received Winks</h2>
 <ul class="profile_list">
-	<% @received_winks.each_with_index do |f, i| %>
+	<% current_user.profile.received_winks.each_with_index do |f, i| %>
 	<li><%= render f.sender, i: i %></li>
 	<% end %>
 </ul>
 <% end %>
 
-<% if @sent_winks.any? %>
+<% if current_user.profile.sent_winks.any? %>
 <h2>All Sent Winks</h2>
 <ul class="profile_list">
-	<% @sent_winks.each_with_index do |f, i| %>
+	<% current_user.profile.sent_winks.each_with_index do |f, i| %>
 	<li><%= render f.receiver, i: i unless f.nil? %></li>
 	<% end %>
 </ul>

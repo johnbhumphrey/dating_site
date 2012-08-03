@@ -6,12 +6,17 @@ class SearchesController < ApplicationController
   end
 
   def create
-  	@search= current_user.profile.searches.create!(params[:search])
-  	redirect_to @search
+  	@search= current_user.profile.searches.build(params[:search])
+  	if @search.save
+      redirect_to @search, flash: { success: "Search successful!" }
+    else
+      render 'new'
+    end  
   end
 
   def show
   	@search= Search.find(params[:id])
+    @profiles= @search.profiles.paginate(page: params[:page], per_page: 20)
   end
 
   def update

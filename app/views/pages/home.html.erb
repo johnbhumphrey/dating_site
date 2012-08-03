@@ -5,7 +5,7 @@
 <% sidebar2_sub_title("greet them kindly!") %>
 
 <% content_for(:sidebar) do %>
-	<%= render 'shared/search', object: @search %>
+	<%= render 'shared/search', object: @search if signed_in? %>
 <% end %>
 	<% if signed_in? %>
 	<% content_for(:sidebar2) do %>
@@ -22,12 +22,17 @@
 	<% end %><br>
 	<p>You have been viewed <%= pluralize(@viewed_count, "time") %></p><br>
 	<p>You have been favorited by <%= pluralize(@favorited_by_count, "person") %></p><br>
-<!-- 	<span><%= render 'shared/lorem' %></span> -->
-	<ul class="feed_items">
-		<% @feed_items.each do |feed_item| %>
-			<li><%= render_correct_item_type(feed_item) %><li>
-		<% end %>
-	</ul>
+
+	<div class="newsfeed well">
+		<h3>Latest News for <%= current_user.nick_name %></h3>
+		<ul class="feed_items">
+			<% @feed_items.reverse.each do |feed_item| %>
+			<li>
+				<%= render_correct_item_type(feed_item) %>
+			<li>
+			<% end %>
+		</ul>
+	</div>
 <% else %>
 	<h2><%= link_to 'NEW USERS SIGN UP NOW FOR FREE!', new_user_path %></h2>
 <% end %>

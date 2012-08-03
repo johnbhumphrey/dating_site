@@ -1091,4 +1091,1808 @@ N+1 Query method call stack
   /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
   /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
   /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
-  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:02[WARN] user: csahlman
+dev:3000/profiles/1/views?page=2
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:02[WARN] user: csahlman
+dev:3000/profiles/1/views?page=2
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:03[WARN] user: csahlman
+dev:3000/profiles/1/views?page=1
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:03[WARN] user: csahlman
+dev:3000/profiles/1/views?page=1
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:31[WARN] user: csahlman
+dev:3000/profiles/201/views
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:31[WARN] user: csahlman
+dev:3000/profiles/201/views
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:33[WARN] user: csahlman
+dev:3000/profiles/201/views
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:33[WARN] user: csahlman
+dev:3000/profiles/201/views
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:35[WARN] user: csahlman
+dev:3000/profiles/201/views
+N+1 Query detected
+  View => [:viewed]
+  Add to your finder: :include => [:viewed]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:8:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:7:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 13:15:35[WARN] user: csahlman
+dev:3000/profiles/201/views
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:22:in `block in _app_views_views_index_html_erb__538885553_89440700'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `each_with_index'
+  /home/csahlman/railsProjects/dating_site/app/views/views/index.html.erb:21:in `_app_views_views_index_html_erb__538885553_89440700'2012-08-02 14:08:50[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87425810'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:09:32[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_94471080'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:09:32[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87425810'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:10:13[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_94471080'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:10:13[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:10:13[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87425810'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:10:33[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:10:33[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:10:33[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:11:08[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:11:08[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:11:08[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:11:08[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_87548970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:12:35[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:12:35[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:12:35[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:12:35[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_87700700'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:12:52[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:12:52[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:12:52[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:12:52[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:13:06[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:13:06[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:13:06[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:13:06[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:13:33[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:13:33[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:13:33[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:13:33[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:15:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:15:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:15:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:15:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:03[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:03[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:03[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:03[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:37[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:37[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:40[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:40[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:40[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:18:40[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:30:in `block in _app_views_pages_home_html_erb__420138419_94844850'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_94844850'2012-08-02 14:20:11[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__636416298'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__636416298'2012-08-02 14:20:11[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__636416298'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__636416298'2012-08-02 14:20:11[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__636416298'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__636416298'2012-08-02 14:20:11[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__636416298'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__636416298'2012-08-02 14:20:42[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_90778930'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_90778930'2012-08-02 14:20:43[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_90778930'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_90778930'2012-08-02 14:20:43[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_90778930'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_90778930'2012-08-02 14:20:43[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_90778930'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_90778930'2012-08-02 14:20:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_90778930'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_90778930'2012-08-02 14:20:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_90778930'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_90778930'2012-08-02 14:20:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_90778930'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_90778930'2012-08-02 14:20:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_90778930'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_90778930'2012-08-02 14:22:22[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 14:22:22[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 14:22:22[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 14:22:22[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 14:22:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 14:22:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 14:22:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 14:22:46[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:22:52[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:22:52[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:22:52[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:22:52[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:23:04[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:23:04[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:23:04[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:23:04[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:28:16[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:28:16[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:28:16[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_97635970'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:28:16[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:29:29[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:29:29[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_87018640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:29:29[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:29:29[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041_87737440'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:30:26[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_87975490'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:30:26[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_94769860'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:30:26[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:30:26[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041__635189398'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:30:41[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_90008480'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:30:41[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_94769860'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:30:41[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:30:41[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041__635189398'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419__635144518'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419__635144518'2012-08-02 16:31:02[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_90008480'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:31:02[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_94769860'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:31:02[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:31:02[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041__635189398'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:36:18[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_90008480'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:36:18[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_94769860'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:36:18[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:36:18[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041__635189398'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:37:02[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_90008480'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:37:02[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_94769860'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:37:02[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:37:02[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041__635189398'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:38:39[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_90004680'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:38:39[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_94769860'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:38:39[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:38:39[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041__635189398'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:24[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_90004680'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:24[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_94769860'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:24[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:24[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Wink => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_wink.html.erb:1:in `_app_views_feed_items__wink_html_erb__816318041__635189398'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:8:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:34[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_90004680'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:34[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_94769860'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:34[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:36[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__529462784_90004680'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:36[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb__303050232_94769860'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 16:40:36[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__772266389_94478540'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__420138419_88986880'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__420138419_88986880'2012-08-02 18:47:28[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__858717922_92493830'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_86803020'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_86803020'2012-08-02 18:47:28[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb___84498362_91675800'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_86803020'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_86803020'2012-08-02 18:47:28[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__482335913_86905640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_86803020'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_86803020'2012-08-02 20:38:58[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__858717922_92493830'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:38:58[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb___84498362_91675800'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:38:58[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__482335913_86905640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:39:15[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__858717922_92493830'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:39:15[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb___84498362_91675800'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:39:15[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__482335913_86905640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:39:27[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__858717922_92493830'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:39:27[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb___84498362_91675800'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:39:27[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__482335913_86905640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:41:58[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  Favorite => [:favoriter]
+  Add to your finder: :include => [:favoriter]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_favorite.html.erb:1:in `_app_views_feed_items__favorite_html_erb___84498362_91675800'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:10:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:41:58[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  View => [:viewer]
+  Add to your finder: :include => [:viewer]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_view.html.erb:1:in `_app_views_feed_items__view_html_erb__858717922_92493830'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:12:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:41:58[WARN] user: csahlman
+dev:3000/
+N+1 Query detected
+  PrivateMessage => [:sender]
+  Add to your finder: :include => [:sender]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/feed_items/_private_message.html.erb:1:in `_app_views_feed_items__private_message_html_erb__482335913_86905640'
+  /home/csahlman/railsProjects/dating_site/app/helpers/pages_helper.rb:6:in `render_correct_item_type'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:31:in `block in _app_views_pages_home_html_erb__582508095_95125260'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `each'
+  /home/csahlman/railsProjects/dating_site/app/views/pages/home.html.erb:29:in `_app_views_pages_home_html_erb__582508095_95125260'2012-08-02 20:43:07[WARN] user: csahlman
+dev:3000/winks
+N+1 Query detected
+  Wink => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/winks/index.html.erb:16:in `block in _app_views_winks_index_html_erb___856076402_94229460'
+  /home/csahlman/railsProjects/dating_site/app/views/winks/index.html.erb:15:in `_app_views_winks_index_html_erb___856076402_94229460'2012-08-02 20:45:14[WARN] user: csahlman
+dev:3000/winks
+N+1 Query detected
+  Wink => [:receiver]
+  Add to your finder: :include => [:receiver]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating_site/app/views/winks/index.html.erb:16:in `block in _app_views_winks_index_html_erb___856076402_88240780'
+  /home/csahlman/railsProjects/dating_site/app/views/winks/index.html.erb:15:in `_app_views_winks_index_html_erb___856076402_88240780'
