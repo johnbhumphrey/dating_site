@@ -19,7 +19,7 @@ module ProfilesHelper
 		if profile.has_main_photo?
 			image_tag(profile.main_photo.avatar.url(:mini))
 		else
-			image_tag('nopicture.png')
+			image_tag('nopicture_mini.png')
 		end	
 	end
 end

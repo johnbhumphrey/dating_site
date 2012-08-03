@@ -24,7 +24,27 @@ $(document).ready(function() {
 		},
 		function() {
 		   $(this).nextAll('.send_message').fadeOut();
-		   $(this).removeClass('expanded');
+		   $(this).removeClass('.expanded');
 	    }
 	); // end toggle
 }); // end ready
+
+$('#feed a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+})
+
+$('#stats a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+})
+
+$('#settings a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+})
+
+$('a[data-toggle="tab"]').on('shown', function (e) {
+    e.target.removeClass('.active') // activated tab
+    e.relatedTarget.addClass('.active') // previous tab
+})

@@ -1,10 +1,10 @@
 module PrivateMessagesHelper
   
 	def other_profile(message)
-		if current_user.profile == message.sender.profile
-			message.receiver.profile
+		if current_user.profile == message.sender
+			message.receiver
 		else
-			message.sender.profile
+			message.sender
 		end
 	end
 

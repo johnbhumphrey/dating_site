@@ -4,7 +4,7 @@
 
 <h2>All Conversations</h2>
 <ul class="conversations">
-<% @messages.includes({sender: :profile }, { receiver: :profile }, :conversation ).each do |f| %>
+<% @messages.each do |f| %>
 	<% if f.conversation.nil? %>
 	<li><%= link_to display_main_photo_thumb(other_profile(f)), f %> 
 		<%= link_to truncate(last_reply(f).body, length: 30), f %>

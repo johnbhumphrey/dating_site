@@ -1,9 +1,9 @@
 class Photo < ActiveRecord::Base
   attr_accessible :avatar, :primary, :caption
   has_attached_file :avatar, default_url: "/default.jpg",
-  :styles => { :medium => "300x300>", :thumb => "100x100>" }
+  :styles => { :medium => "300x300>", :thumb => "100x100>", :mini => "30x30>" }
 
-  belongs_to :profile
+  belongs_to :profile, counter_cache: true
    	
 end
 # == Schema Information

@@ -1,11 +1,11 @@
 <%= form_for object do |f| %>
   <div class="field">
     <%= f.label :keywords %><br />
-    <%= f.text_field :keywords %>
+    <%= f.text_field :keywords, { class: "search_input" } %>
   </div>
   <div class="field">
     <%= f.label :interested_in %><br />
-    <%= f.select :interested_in, Profile::INTERESTED_TYPES, include_blank: true %>
+    <%= f.select :interested_in, Profile::INTERESTED_TYPES, { include_blank: true }, { class: "interested_in" } %>
   </div>
   <div class="field">
     <%= f.label :min_age, "Age Range" %><br />

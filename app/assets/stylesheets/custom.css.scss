@@ -28,8 +28,26 @@ ul.profile_list > li {
 	list-style: none
 }
 
+div.sidebar-nav {
+
+	input {
+		margin: -18px, 0, 0, -5px;
+	}
+}
+
+.search_input {
+	box-sizing: border-box;
+	width: 90%;
+	padding: 8px;
+	border: 1px solid #cce;
+}
+
 .number_select {
 	width: 55px;
+}
+
+.interested_in {
+	width: 95%;
 }
 
 li {
@@ -38,11 +56,12 @@ li {
 
 
 ul.feed_items {
-	margin: 10px 0 0 0;
+	margin: 10px 0 0 -4px;
 
 	  li {
 	    padding: 5px 0;
 	    border-top: 1px solid #e8e8e8;
+	    font-size: 75%;
 	  }
 
 	  .timestamp {
@@ -51,6 +70,32 @@ ul.feed_items {
 	  	color: gray; 
 	  }
 }
+
+
+
+.newsfeed, .profile_stats, .profile_settings {
+	min-height: 400px;
+}
+
+
+footer li {
+	list-style-type: inline;
+	display: inline-block;
+}
+
+footer li a {
+	color: blue;
+}
+
+footer li a:hover {
+	color: red;
+}
+
+footer li a:visited {
+	color: #a9a9a9;
+}
+
+
 
 
 

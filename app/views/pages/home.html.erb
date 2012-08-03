@@ -1,4 +1,4 @@
-<% title("No Fat Chicks:  Welcome!") %>
+<% title("Mega Date- Welcome") %>
 <% sidebar_main_title("Search For New Members") %>
 <% sidebar_sub_title("Select criteria") %>
 <% sidebar2_main_title("Newest members that fit your criteria") %>
@@ -13,26 +13,45 @@
 	<% end %>
 <% end %>
 
-<% if signed_in? %>
-	<h1>Welcome back <%= @current_user.nick_name %></h1>
-	<% if !current_user.profile.nil? %>
-	<span><%= link_to "Your profile", current_user.profile %></span>
-	<% else %>
-	<span><%= link_to "Create a profile!", new_profile_path %></span>
-	<% end %><br>
-	<p>You have been viewed <%= pluralize(@viewed_count, "time") %></p><br>
-	<p>You have been favorited by <%= pluralize(@favorited_by_count, "person") %></p><br>
-
-	<div class="newsfeed well">
-		<h3>Latest News for <%= current_user.nick_name %></h3>
-		<ul class="feed_items">
-			<% @feed_items.reverse.each do |feed_item| %>
-			<li>
-				<%= render_correct_item_type(feed_item) %>
-			<li>
-			<% end %>
-		</ul>
+<% if signed_in? && current_user.profile %>
+<h1>Welcome back <%= current_user.nick_name %> <%= display_main_photo_mini(current_user.profile) %></h1>
+<span><%= link_to "Your profile", current_user.profile %></span><br><br>
+<div class= "tabbable">
+	<ul class="nav nav-tabs">
+		<li class="active" id="feed"><%= link_to 'Newsfeed', '#tab1', 'data-toggle' => 'tab' %></li>
+		<li id="stats"><%= link_to 'Profile Statistics', '#tab2', 'data-toggle' => 'tab' %></li>
+		<li id="settings"><%= link_to 'Settings', '#tab3', 'data-toggle' => 'tab' %></li>
+	</ul>	
+	<div class="tab-content">
+		<div class="tab-pane active" id="tab1">
+			<div class="newsfeed well">
+				<h3>Latest News for <%= current_user.nick_name %></h3>
+				<ul class="feed_items">
+					<% @feed_items.reverse.each do |feed_item| %>
+					<li>
+						<%= render_correct_item_type(feed_item) %>
+					<li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+		<div class="tab-pane" id="tab2">
+			<div class="profile_stats well">
+				<span>You have been viewed <%= pluralize(@viewed_count, "time") %></span><br>
+				<span>You have been favorited by <%= pluralize(@favorited_by_count, "person") %></span>
+				<br>
+			</div>	
+		</div>	
+		<div class="tab-pane" id="tab3">
+			<div class="profile_settings well">
+				<%= render 'pages/settings' %>
+			</div>	
+		</div>			
 	</div>
+
+</div>
+<% elsif signed_in? %>
+	<span><%= link_to "Create a profile!", new_profile_path %></span>
 <% else %>
 	<h2><%= link_to 'NEW USERS SIGN UP NOW FOR FREE!', new_user_path %></h2>
 <% end %>

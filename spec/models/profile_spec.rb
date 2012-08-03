@@ -49,5 +49,6 @@ end
 #  avatar_updated_at   :datetime
 #  hidden              :boolean         default(FALSE)
 #  new_user            :boolean
+#  photos_count        :integer
 #
 

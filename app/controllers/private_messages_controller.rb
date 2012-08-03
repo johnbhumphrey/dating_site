@@ -7,26 +7,26 @@ class PrivateMessagesController < ApplicationController
 
   def show
   	@current_message= PrivateMessage.find(params[:id])
-  	unless (current_user.id==@current_message.receiver_id) || (current_user.id== @current_message.sender_id)
+  	unless (current_user.profile.id==@current_message.receiver_id) || (current_user.profile.id== @current_message.sender_id)
   		redirect_to root_path, flash: { error: "You don't have permission to access this page."}
   	end
     if @current_message.conversation   #this bit of ensures the conversation head gets passed in
       @current_message= @current_message.conversation         
     end 
-  	@sender= User.find(@current_message.sender_id).profile 
-    @receiver= User.find(@current_message.receiver_id).profile
+  	@sender= Profile.find(@current_message.sender_id) 
+    @receiver= Profile.find(@current_message.receiver_id)
     @sender==current_user.profile ? @other_user= @receiver : @other_user= @sender
   end
 
   def index
     @messages= PrivateMessage.where("sender_id= ? OR receiver_id= ?", current_user.profile.id,
-        current_user.profile.id)
+        current_user.profile.id).includes(:sender, :receiver, :conversation, :replies)
   end
 
   def create
-    convo= PrivateMessage.current_conversation(current_user.id, params[:private_message][:receiver_id])
+    convo= PrivateMessage.current_conversation(current_user.profile.id, params[:private_message][:receiver_id])
     if convo.nil?
-      message= current_user.sent_messages.build(params[:private_message])
+      message= current_user.profile.sent_messages.build(params[:private_message])
       if message.save
         redirect_to message, flash: { success: "Sent message successfully" }
       else
@@ -35,7 +35,7 @@ class PrivateMessagesController < ApplicationController
       end
     else
       message= convo.replies.create!(params[:private_message])
-      redirect_to message
+      redirect_to message, flash: { success: "Reply sent successfully"}
     end
 
   end

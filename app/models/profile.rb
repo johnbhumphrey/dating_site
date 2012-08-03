@@ -48,7 +48,12 @@ class Profile < ActiveRecord::Base
   validates :ethnicity, inclusion: ETHNICITY_TYPES
   validates :interested_in, inclusion: INTERESTED_TYPES
 
-  has_many :photos
+  has_many :photos, dependent: :destroy
+
+  has_many :sent_messages, class_name: "PrivateMessage", foreign_key: 'sender_id',
+      dependent: :destroy
+  has_many :received_messages, class_name: "PrivateMessage", foreign_key: 'receiver_id',
+      dependent: :destroy
 
   has_many :sent_winks, class_name: "Wink", foreign_key: 'sender_id',
       dependent: :destroy
@@ -71,16 +76,21 @@ class Profile < ActiveRecord::Base
   belongs_to :user
 
   default_scope order: 'created_at DESC'
+  scope :visible, where(hidden: false)
 
   def has_main_photo?
-    return photos.where(primary: true).any?
+    return photos.where(primary: true).first
   end
-
+  
   def main_photo
     return photos.where(primary: true).first
   end
 
-  def self.generate_random_profiles(profiles)
+  def self.generate_random_profiles(profiles, search)
+    unless search.new_record?
+      profiles= Search.find(search).profiles.limit(10) #if search exists, return the associated profiles
+      #limited at 10, or else just return random profiles as usual
+    end  
     size= profiles.count
     size > 3 ? count=3 : count = size
     x= 0
@@ -151,5 +161,6 @@ end
 #  avatar_updated_at   :datetime
 #  hidden              :boolean         default(FALSE)
 #  new_user            :boolean
+#  photos_count        :integer
 #
 

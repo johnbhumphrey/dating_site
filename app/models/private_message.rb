@@ -1,7 +1,7 @@
 class PrivateMessage < ActiveRecord::Base
   attr_accessible :body, :read_at, :title, :receiver_id, :sender_id, :conversation_id
-  belongs_to :sender, class_name: 'User', foreign_key: 'sender_id'
-  belongs_to :receiver, class_name: 'User', foreign_key: 'receiver_id'
+  belongs_to :sender, class_name: 'Profile', foreign_key: 'sender_id'
+  belongs_to :receiver, class_name: 'Profile', foreign_key: 'receiver_id'
   belongs_to :conversation, :class_name => 'PrivateMessage'  # Reference to parent message
   has_many :replies,  :class_name => 'PrivateMessage', :foreign_key => 'conversation_id',
     order: 'created_at DESC'

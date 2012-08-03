@@ -12,11 +12,11 @@
 </p>
 <ul class="profile_messages">	
 	<p class="profile">
-		<% @current_message.replies.each do |f| %>
+		<% @current_message.replies.includes(:sender).each do |f| %>
 		<li>
 			<div class="message_body">
 				<span class="message_photo">
-				<%= link_to display_main_photo_thumb(f.sender.profile), f.sender.profile %>
+				<%= link_to display_main_photo_thumb(f.sender), f.sender %>
 				</span>
 				<div class="message_body"><%= f.body %></div>
 				<div class="time_stamp">Sent <%= distance_of_time_in_words(f.created_at, Time.now.utc) %> ago.</div>
@@ -26,8 +26,8 @@
 		<li>
 			<div class="message_body">
 				<span class="message_photo">
-				<%= link_to display_main_photo_thumb(@current_message.sender.profile), 
-					@current_message.sender.profile %>
+				<%= link_to display_main_photo_thumb(@current_message.sender), 
+					@current_message.sender %>
 				</span>
 				<div class="message_body"><%= @current_message.body %></div>
 				<div class="time_stamp">Sent <%= distance_of_time_in_words(@current_message.created_at, Time.now.utc) %> ago.</div>
