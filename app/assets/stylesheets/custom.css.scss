@@ -95,6 +95,38 @@ footer li a:visited {
 	color: #a9a9a9;
 }
 
+div.profile_info {
+	position: relative;
+}
+
+div.user_name {
+	position: absolute;
+	left: 108px;
+	top: 25px;
+	a {
+		font-size: 160%;
+		font-weight: bold;
+		color: 000;
+	}
+
+	a:visited {
+		color: 000;
+	}
+}
+
+div.short_bio {
+	position: absolute;
+	left: 110px;
+	top: 45px;
+	font-style: italic;
+}
+
+span.short_bio {
+	position: absolute;
+	top: 20px;
+
+}
+
 
 
 

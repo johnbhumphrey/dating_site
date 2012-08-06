@@ -1,11 +1,15 @@
 <% title("#{@profile.nick_name}'s profile") %>
+<% sidebar_main_title("Details") %>
+<% sidebar_sub_title(@profile.nick_name) %>
+<%= render 'shared/profile_info', object: @profile %>
 
-<h2>
-<% if @profile.has_main_photo? %>
-	<%= image_tag @profile.main_photo.avatar.url(:medium) %>
-<% else %>
-	<%= image_tag 'nopicture_full.png' %>
+<% sidebar2_main_title("User actions") %>
+<% sidebar2_sub_title("") %>
+<% content_for(:sidebar2) do %>
+	<%= render 'actions', object: @profile unless @profile== current_user.profile %>
 <% end %>
+<h2>
+<%= display_main_photo(@profile) %>
 <%= @profile.nick_name %><br>
 <% if current_user.profile == @profile %>
 	(<%= link_to "Edit your photos", edit_profile_photo_path([@profile]) %>)
@@ -24,12 +28,10 @@
 	<% if !current_user.profile.favorited?(@profile.id) %>
 	<span class="favorite">
 		<%= render 'shared/favorite_button', object: @profile %>
-	</span>
 	<% else %>
-	<span class="favorite">
 		<%= render 'shared/favorited_button', object: @profile %>
-	</span>
 	<% end %>
+	</span>
 <% end %>
 </h2>
 <span class="profile_header"><%= @profile.age %> / <%= @profile.sex %> /
@@ -44,13 +46,7 @@
 
 <h3>You should message me if:</h3>
 <p><%= @profile.message_me_if %></p><br>
-<% sidebar_main_title("Details") %>
-<% sidebar_sub_title(@profile.nick_name) %>
-<%= render 'shared/profile_info', object: @profile %>
 
-<% content_for(:sidebar2) do %>
-
-<% end %>
 <% unless current_user.profile == @profile %>
 	<%= render 'shared/send_message', object: @profile %>
 <% end %>

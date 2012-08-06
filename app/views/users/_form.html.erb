@@ -20,7 +20,7 @@
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
-  <% unless params[:action] == 'edit' %>
+  <% unless params[:action] == 'edit' || params[:action] == 'update' %>
   <div class="field">
     <%= f.label :nick_name, "What you want your username to be" %><br />
     <%= f.text_field :nick_name %>

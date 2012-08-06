@@ -5,7 +5,8 @@
     </div>
     <div class="user_name"><%= link_to profile.nick_name, profile %></div>
     <div class="short_bio">
-      <%= profile.age %> / <%= profile.sex %> / <%= profile.zipcode %>
+      <%= profile.age %> / <%= profile.sex %> / <%= profile.zipcode %> <br>
+      <%= profile.relationship_status %> / Looking for: <%= profile.interested_in %>
     </div>
     <% if current_user.admin? %>
       <%= link_to "Delete #{profile.nick_name}", profile, method: :delete, 

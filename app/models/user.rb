@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
   has_one :profile, dependent: :destroy 
 
   before_save { |user| user.email = email.downcase }
-  before_save :create_remember_token
+  before_create :create_remember_token
 
   after_destroy :ensure_an_admin_remains
 

@@ -1,8 +1,9 @@
 class SearchesController < ApplicationController
   before_filter :must_have_profile
+  require 'will_paginate/array'
 
   def new
-  	@search= Search.new
+  	@search= current_user.profile.searches.last || Search.new
   end
 
   def create
@@ -16,7 +17,9 @@ class SearchesController < ApplicationController
 
   def show
   	@search= Search.find(params[:id])
-    @profiles= @search.profiles.paginate(page: params[:page], per_page: 20)
+    @profiles= (@search.profiles.visible - Profile.hidden_and_hidden_by(current_user.profile))
+    @profiles_count= @profiles.count
+    @profiles= @profiles.paginate(page: params[:page], per_page: 20)
   end
 
   def update

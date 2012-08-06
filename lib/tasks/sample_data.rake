@@ -27,10 +27,12 @@ namespace :db do
       sexes= ["Male", "Female"]
       sex= sexes[Random.rand(0..1)]
       zipcode= "02446"
+      interested= ["Male", "Female", "Both"]
+      interested_in= interested[Random.rand(0..2)]
       relationship_status= "Single"
       f.create_profile!(age: age, zipcode: zipcode, relationship_status: relationship_status,
           about_me: about_me, good_at: good_at, message_me_if: message_me_if, 
-          interested_in: sex, sex: sex, body_type: "Slender", smokes: "No Answer", 
+          interested_in: interested_in, sex: sex, body_type: "Slender", smokes: "No Answer", 
           drinks: "No Answer", exercise: "No Answer", drugs: "No Answer",
           offspring: "No Answer", income: "No Answer", religion: "No Answer",
           language: "No Answer", ethnicity: "No Answer", nick_name: f.nick_name)

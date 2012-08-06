@@ -1,11 +1,10 @@
 Dating::Application.routes.draw do
 
 
-  get "views/new"
 
-  get "views/create"
+  get "hiddens/new"
 
-  get "views/index"
+  get "hiddens/index"
 
   match '/about', to: "pages#about"
   match '/contact', to: "pages#contact"
@@ -21,6 +20,7 @@ Dating::Application.routes.draw do
     resources :photos
     resources :views, only: [ :new, :create, :index ]
     resources :favorites, only: [:new, :create, :destroy]
+    resources :hiddens, only: [ :new, :create, :destroy, :index ]
   end
   resources :favorites, only: [:index, :show]
   resources :winks, only: [:index, :new, :create]

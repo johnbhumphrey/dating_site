@@ -1,0 +1,7 @@
+<span class="hidden_button">
+<% if current_user.profile.hid?(object) %>
+	<%= render 'shared/unhide', object: object %>
+<% else %>
+	<%= render 'shared/hide', object: object %>
+<% end %>
+</span>

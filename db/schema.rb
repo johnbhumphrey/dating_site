@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120803141936) do
+ActiveRecord::Schema.define(:version => 20120805181832) do
 
   create_table "favorites", :force => true do |t|
     t.integer  "favoriter_id"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(:version => 20120803141936) do
   end
 
   add_index "favorites", ["favoriter_id", "favoritee_id"], :name => "index_favorites_on_favoriter_id_and_favoritee_id", :unique => true
+
+  create_table "hiddens", :force => true do |t|
+    t.integer  "sender_id"
+    t.integer  "receiver_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "hiddens", ["sender_id", "receiver_id"], :name => "index_hiddens_on_sender_id_and_receiver_id", :unique => true
 
   create_table "photos", :force => true do |t|
     t.integer  "profile_id"

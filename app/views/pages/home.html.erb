@@ -7,7 +7,7 @@
 <% content_for(:sidebar) do %>
 	<%= render 'shared/search', object: @search if signed_in? %>
 <% end %>
-	<% if signed_in? %>
+<% if signed_in? %>
 	<% content_for(:sidebar2) do %>
 		<%= render @new_members, i: 0 %>
 	<% end %>

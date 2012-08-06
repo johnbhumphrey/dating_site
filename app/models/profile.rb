@@ -72,11 +72,31 @@ class Profile < ActiveRecord::Base
   has_many :viewed_by, through: :reverse_views, source: :viewer   
   has_many :searches, dependent: :destroy
 
+  has_many :hidden_profiles, class_name: "Hidden", foreign_key: "sender_id", 
+      dependent: :destroy
+  has_many :reverse_hidden_profiles, class_name: "Hidden", foreign_key: "receiver_id",
+      dependent: :destroy
+  has_many :profiles_hidden, through: :hidden_profiles, source: :receiver
+  has_many :profiles_hidden_by, through: :reverse_hidden_profiles, source: :sender
+
+
       
   belongs_to :user
 
   default_scope order: 'created_at DESC'
   scope :visible, where(hidden: false)
+
+  def self.all_visible_profiles(profile)
+    total_visible= visible - profile.profiles_hidden - profile.profiles_hidden_by
+    total_visible.slice!(total_visible.index(profile)) if total_visible.include?(profile)
+    total_visible
+  end
+
+  def self.hidden_and_hidden_by(profile)
+    hidden_pro= (profile.profiles_hidden + profile.profiles_hidden_by)
+    hidden_pro.slice!(hidden_pro.index(profile)) if hidden_pro.include?(profile)
+    hidden_pro
+  end
 
   def has_main_photo?
     return photos.where(primary: true).first
@@ -120,6 +140,10 @@ class Profile < ActiveRecord::Base
 
   def favorited?(favoritee_id)
     favorites.find_by_favoritee_id(favoritee_id)
+  end
+
+  def hid?(profile)
+    hidden_profiles.find_by_receiver_id(profile.id)
   end
 
 end

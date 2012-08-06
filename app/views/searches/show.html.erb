@@ -10,11 +10,13 @@
 <% if @search.profiles.nil? %>
 <h1>Search returned no results.  :(</h1>
 <% else %>
-<h1>Search Results: Found <%= @profiles.count %> profiles. </h1>
+<h1>Search Results: Found <%= @profiles_count %> profiles. </h1>
 
 <%= will_paginate @profiles %>
 
-<%= render @profiles, i: 0 %>
+<% @profiles.each_with_index do |f, i| %>
+	<%= render f, i: i%2 %>
+<% end %>
 
 <%= will_paginate @profiles %>
 
