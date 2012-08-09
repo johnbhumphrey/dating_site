@@ -1,0 +1,16 @@
+<div id="myCarousel" class="carousel slide">
+    <!-- Carousel items -->
+ <div class="carousel-inner">
+    <div class="item active"><%= image_tag(collection.first.avatar.url(:medium)) %></div>
+    <% collection.each_with_index do |f, i| %>
+        <% unless i==0 %>
+        <div class="item"><%= image_tag(f.avatar.url(:medium)) %> <br> <%= f.caption %></div>
+        <% end %>
+    <% end %>
+ </div>
+    <!-- Carousel nav -->
+ <% if collection.count > 1 %>
+     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+     <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+ <% end %>
+</div>

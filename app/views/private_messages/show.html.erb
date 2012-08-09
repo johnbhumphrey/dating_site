@@ -13,24 +13,26 @@
 <ul class="profile_messages">	
 	<p class="profile">
 		<% @current_message.replies.includes(:sender).each do |f| %>
-		<li>
-			<div class="message_body">
-				<span class="message_photo">
-				<%= link_to display_main_photo_thumb(f.sender), f.sender %>
-				</span>
-				<div class="message_body"><%= f.body %></div>
-				<div class="time_stamp">Sent <%= distance_of_time_in_words(f.created_at, Time.now.utc) %> ago.</div>
+		<li class="message_list well">
+			<%= link_to display_main_photo_mini(f.sender), f.sender %>
+			<span class="time_stamp">
+				<%= sent_or_received(f) %> <%= distance_of_time_in_words(f.created_at, Time.now.utc) %> ago.
+			</span>
+			<span class="sender_name"><%= f.sender.nick_name %></span>
+			<div class="message_body" id="message_id_<%= @other_user==f.sender ? 1 : 0 %>">
+				<p class="message"><%= f.body %></p>
 			</div>
 		</li><br>	
 		<% end %>
-		<li>
-			<div class="message_body">
-				<span class="message_photo">
-				<%= link_to display_main_photo_thumb(@current_message.sender), 
-					@current_message.sender %>
-				</span>
-				<div class="message_body"><%= @current_message.body %></div>
-				<div class="time_stamp">Sent <%= distance_of_time_in_words(@current_message.created_at, Time.now.utc) %> ago.</div>
+		<li class="message_list well">
+			<%= link_to display_main_photo_mini(@current_message.sender), @current_message.sender %>
+			<span class="time_stamp">
+				<%= sent_or_received(@current_message) %> 
+				<%= distance_of_time_in_words(@current_message.created_at, Time.now.utc) %> ago.
+			</span>
+			<span class="sender_name"><%= @current_message.sender.nick_name %></span>
+			<div class="message_body" id="message_id_<%= @other_user==@current_message.sender ? 1 : 0 %>">
+				<p class="message"><%= @current_message.body %></p>
 			</div>
 		</li><br>	
 	</p>

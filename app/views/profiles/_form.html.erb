@@ -10,6 +10,7 @@
       </ul>
     </div>
   <% end %>
+
   <div class="field">
     <%= f.label :age %><br />
     <%= f.select :age, 18..100, prompt: 'Select an age' %>
@@ -90,13 +91,7 @@
     <%= f.label :exercise %><br />
     <%= f.select :exercise, Profile::EXERCISE_TYPES, prompt: 'Describe your exercise habits' %>
   </div>
-  <% if params[:action]== 'new' %>
   <div class="actions">
-    <%= f.submit 'asdfasdf Profile' %>
-  </div>
-  <% else %>
-  <div class="actions">
-    <%= f.submit 'Update Profile' %>
+    <%= f.submit 'Submit Profile' %>
   </div>  
-  <% end %>
 <% end %>

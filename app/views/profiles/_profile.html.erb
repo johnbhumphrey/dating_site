@@ -8,10 +8,13 @@
       <%= profile.age %> / <%= profile.sex %> / <%= profile.zipcode %> <br>
       <%= profile.relationship_status %> / Looking for: <%= profile.interested_in %>
     </div>
+    <div class="hide_me" id="hide_id_<%= profile.id %> %>">
+      <%= render 'profiles/actions', object: profile %>
+    </div>
     <% if current_user.admin? %>
       <%= link_to "Delete #{profile.nick_name}", profile, method: :delete, 
           class: "btn btn-danger btn-small", confirm: "Are you sure?,", remote: true %>
     <% end %>
   </div>
-  <div class= "about_me"><%= truncate(profile.about_me, length: 500) %></div>
+  <div class= "about_me"><strong>About me: </strong><%= truncate(profile.about_me, length: 300) %></div>
 </div>

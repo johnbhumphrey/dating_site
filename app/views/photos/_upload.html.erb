@@ -1,5 +1,4 @@
 <%= form_for [@profile, Photo.new] do |f| %>
-  <h3>Select a file to upload: </h3>
   <div class="field">
   	<%= f.label :avatar, "Select a photo to upload from your computer" %>
   	<%= f.file_field :avatar %>

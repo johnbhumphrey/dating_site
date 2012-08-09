@@ -5,11 +5,13 @@
 <% sidebar2_sub_title("greet them kindly!") %>
 
 <% content_for(:sidebar) do %>
-	<%= render 'shared/search', object: @search if signed_in? %>
+	<%= render 'shared/search', object: @search if (signed_in? && current_user.profile) %>
 <% end %>
-<% if signed_in? %>
+<% if signed_in? && current_user.profile %>
 	<% content_for(:sidebar2) do %>
-		<%= render @new_members, i: 0 %>
+		<% @new_members.each_with_index do |f, i| %>
+			<%= render 'profiles/sidebar_profile', object: f %>
+		<% end %>
 	<% end %>
 <% end %>
 
@@ -51,7 +53,8 @@
 
 </div>
 <% elsif signed_in? %>
-	<span><%= link_to "Create a profile!", new_profile_path %></span>
+	<h1>Welcome to Mega Date!  You are just one step away from being able to search and communicate with matches. <br>
+		<%= link_to "Create a profile!", new_profile_path %></h1>
 <% else %>
 	<h2><%= link_to 'NEW USERS SIGN UP NOW FOR FREE!', new_user_path %></h2>
 <% end %>

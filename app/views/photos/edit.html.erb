@@ -1,28 +1,34 @@
-<% if @profile.photos.any? %>
-	<% @profile.photos.each do |photo| %>
-		<div id= "form_<%= photo.id %>">
-		<%= form_for [@profile, photo] do |f| %>
-			<div class="photo">
-				<%= image_tag photo.avatar.url %> 
-				<%= link_to "(delete?)", profile_photo_path(@profile, photo), 
-					method: 'delete', confirm: "Are you sure?" %><br>
-			</div>
-		    <div class="field">
-		        <%= f.label :caption %><br />
-		        <%= f.text_area :caption %>
-		    </div>
-		    <div class="field">
-		        <%= f.label :primary, "Make this your primary photo? (uncheck others)" %><br />
-		        <%= f.check_box :primary %>
-		    </div>
-		    <div class="actions">
-   				<%= f.submit %>
-  			</div>
-		<% end %>
-		</div>
-	<% end %>
-<% else %>
-<h2>You have no photos:  <%= link_to "Add a new photo", new_profile_photo_path(@profile) %>
-</h2>
+<% title("Edit your photos") %>
+<% sidebar2_main_title("Upload new image") %>
+<% sidebar2_sub_title("select a file") %>
+<%= content_for(:sidebar2) do %>
+	<%= render 'upload', object: @profile %>
 <% end %>
-<%= render 'upload', object: @profile %>
+
+<h1>Edit your photos:</h1> <br>
+
+<%= form_for current_user.profile, method: :put do |f| %>
+
+  <%= f.fields_for :photos do |builder| %>
+    <fieldset>
+	   	<div class="photo">
+	      <%= image_tag(builder.object.avatar.url(:medium)) %><br>
+	      <%= builder.check_box :_destroy %>
+  		  <%= builder.label "Delete this photo" %>
+	    </div>
+	    <div class="field">
+	        <%= builder.label :caption %><br />
+	        <%= builder.text_field :caption %>
+	    </div>
+	    <div class="field">
+	    	<%= builder.label "Make this your primary photo (select only 1)" %>
+	    	<%= builder.check_box :primary %>
+	    </div>
+    </fieldset>
+  <% end %>
+
+	<div class="field">
+		<%= f.submit %>
+	</div>
+<% end %>
+

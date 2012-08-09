@@ -17,7 +17,7 @@ class PrivateMessage < ActiveRecord::Base
 
   default_scope order: 'private_messages.created_at DESC'
 
-  validates :body, presence: true, length: { within: 6..1000 }
+  validates :body, presence: true, length: { within: 6..5000 }
 
   def self.current_conversation(sender_id, receiver_id)
   	messages= sent_messages= self.where('sender_id= ? AND receiver_id= ?', sender_id, receiver_id) +

@@ -2,7 +2,7 @@ class Profile < ActiveRecord::Base
   attr_accessible :interested_in, :about_me, :age, :good_at, :location, :message_me_if, 
   	:relationship_status, :sex, :body_type, :height, :ethnicity, :smokes,
   	:drinks, :religion, :income, :job, :language, :drugs, :offspring, :exercise, :zipcode,
-    :formatted_height, :avatar, :nick_name
+    :formatted_height, :avatar, :nick_name, :photos_attributes
   INTERESTED_TYPES= [ "Male", "Female", "Both" ]  
   RELATIONSHIP_TYPES = [ "Single", "Available", "Separated", "Divorced",
   		"Widower", "Married", "In a relationship" ]
@@ -33,7 +33,7 @@ class Profile < ActiveRecord::Base
   validates :good_at, length: { maximum: 5000 }
   validates :message_me_if, length: { maximum: 2000 }
   validates :relationship_status, inclusion: RELATIONSHIP_TYPES
-  validates :sex, inclusion: [ "Male", "Female" ]
+  validates :sex, inclusion: [ "Male", "Female", "Both" ]
   validates :smokes, inclusion: SMOKES_TYPES
   validates :body_type, inclusion: BODY_TYPES
   validates :height, numericality: true, inclusion: { in: 36..90 }
@@ -49,6 +49,7 @@ class Profile < ActiveRecord::Base
   validates :interested_in, inclusion: INTERESTED_TYPES
 
   has_many :photos, dependent: :destroy
+  accepts_nested_attributes_for :photos, allow_destroy: true
 
   has_many :sent_messages, class_name: "PrivateMessage", foreign_key: 'sender_id',
       dependent: :destroy

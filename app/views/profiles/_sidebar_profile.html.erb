@@ -1,0 +1,16 @@
+<div class="sidebar_container">
+    <div class="sidebar_image_thumbnail">
+    	<%= link_to display_main_photo_thumb(object), object %>
+        <div class="sidebar_hide_me" id="hide_id_<%= object.id %> %>">
+      		<%= render 'profiles/actions', object: object %>
+	    </div>	
+    </div>
+    <div class="sidebar_user_name"><%= link_to object.nick_name, object %></div>
+    <div class="sidebar_bio">
+      <%= object.age %> / <%= object.sex %> / <%= object.zipcode %> <br>
+      <%= object.relationship_status %> / Looking for: <%= object.interested_in %>
+    </div>
+
+
+
+</div>

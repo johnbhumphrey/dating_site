@@ -16,4 +16,21 @@ module PrivateMessagesHelper
 		end
 	end
 
+	def sent_or_received(message)
+		if message.sender== current_user.profile
+			"Sent"
+		else
+			"Received"
+		end
+	end
+
+	def sent_or_received_class(message)
+		if message.sender== current_user.profile
+			nil
+		else
+			"well"
+		end
+	end
+
+
 end

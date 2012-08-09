@@ -31,15 +31,16 @@ ul.profile_list > li {
 div.sidebar-nav {
 
 	input {
-		margin: -18px, 0, 0, -5px;
+		margin: -18px, 0, -15px, -5px;
 	}
 }
 
 .search_input {
 	box-sizing: border-box;
-	width: 90%;
-	padding: 8px;
-	border: 1px solid #cce;
+	width: 88%;
+	max-width: 210px;
+	padding: 4px;
+	// border: 1px solid #cce;
 }
 
 .number_select {
@@ -48,6 +49,7 @@ div.sidebar-nav {
 
 .interested_in {
 	width: 95%;
+	max-width: 210px;
 }
 
 li {
@@ -74,7 +76,7 @@ ul.feed_items {
 
 
 .newsfeed, .profile_stats, .profile_settings {
-	min-height: 400px;
+	min-height: 550px;
 }
 
 
@@ -102,7 +104,7 @@ div.profile_info {
 div.user_name {
 	position: absolute;
 	left: 108px;
-	top: 25px;
+	top: 10px;
 	a {
 		font-size: 160%;
 		font-weight: bold;
@@ -117,7 +119,7 @@ div.user_name {
 div.short_bio {
 	position: absolute;
 	left: 110px;
-	top: 45px;
+	top: 30px;
 	font-style: italic;
 }
 
@@ -126,6 +128,97 @@ span.short_bio {
 	top: 20px;
 
 }
+div.profile_info > a {
+	position: absolute;
+	left: 110px;
+	top: 65px;
+}
+
+div.hide_me {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+div.sidebar_image_thumbnail {
+	position: relative;
+}
+
+div.sidebar_hide_me {
+	position: absolute;
+	left: 115px;
+	bottom: 40px;
+}
+ul.profile_messages {
+
+	li.message_list {
+		margin: -10px, 0, 0, -10px;
+		min-height: 100px;
+		overflow: hidden;
+		border: 2px solid gray;
+		position: relative;
+		span.time_stamp {
+			position: absolute;
+			left: 30px;
+			top: 20px;		
+			font-size: 80%;
+			font-style: italic;
+		}
+		span.sender_name {
+			position: absolute;
+			left: 30px;
+			top: 7px;
+			font-weight: bold;
+			font-size: 110%;
+		}
+		img {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+
+		div.message_body {
+			margin-left: 10px;
+			margin-top: 20px;
+			margin-right: 10px;
+			border-top: 2px solid black;
+			
+			p.message {
+			    font-family: Verdana,"Bitstream Vera Sans",sans-serif;
+			    font-weight: normal;
+			    font-size: 12px;
+			}
+
+
+		}
+
+	}
+
+	// div#message_id_0 {
+	// 	background-color: rgb(245, 245, 245);
+	// }
+	// div#message_id_1 {
+	// 	background-color: #fff;
+	// }
+
+}
+
+a.carousel-control.left {
+	left: -50px;
+}
+
+a.carousel-control.right {
+	left: 300px;
+}
+
+
+
+
+
+
+
+
+
 
 
 

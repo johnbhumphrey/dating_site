@@ -1,11 +1,5 @@
 Dating::Application.routes.draw do
 
-
-
-  get "hiddens/new"
-
-  get "hiddens/index"
-
   match '/about', to: "pages#about"
   match '/contact', to: "pages#contact"
   match '/help', to: "pages#help"

@@ -7,8 +7,10 @@ class PagesController < ApplicationController
       @favorited_by_count= current_user.profile.favorited_by.count
       @search = Search.where("profile_id= ? AND save_search= ?", current_user.profile, true)
       @search.any? ? @search= @search.last : @search= Search.new
-      @new_members= Profile.generate_random_profiles(Profile.limit(30), @search)
+      @new_members= Profile.generate_random_profiles(Profile.limit(30)-
+        Profile.hidden_and_hidden_by(current_user.profile), @search)
     else
+      @search= Search.new
       @new_members= Profile.generate_random_profiles(Profile.limit(30), Search.new)  
   	end
 

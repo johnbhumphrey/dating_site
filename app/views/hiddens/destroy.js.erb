@@ -1,2 +1,2 @@
-$('span.hidden_button').hide().html("<%=j render 'shared/hide', 
+$('div#hide_id_<%= @profile.id %>').hide().html("<%=j render 'shared/hide', 
 	object: @profile %>").show();
