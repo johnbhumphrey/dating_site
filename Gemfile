@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
 gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
@@ -43,6 +44,7 @@ gem 'faker', '1.0.1'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'quiet_assets', :group => :development
 gem "bullet", :group => "development"
+gem 'heroku'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
