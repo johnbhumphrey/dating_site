@@ -13,7 +13,7 @@ class Search < ActiveRecord::Base
   	def find_profiles
   		profiles= Profile.visible.order("created_at DESC")
   		profiles= profiles.where("about_me like ?", "%#{keywords}%") if keywords.present?
-  		profiles= profiles.where(interested_in: interested_in) if interested_in.present?
+  		profiles= profiles.where(sex: sex) if sex.present? && sex!="Both"
   		profiles= profiles.where("age >= ?", min_age) if min_age.present?
   		profiles= profiles.where("age <= ?", max_age) if max_age.present?
   		profiles= profiles.where("height >= ?", min_height) if min_height.present?

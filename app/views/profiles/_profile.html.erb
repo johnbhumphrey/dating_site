@@ -10,11 +10,12 @@
     </div>
     <div class="hide_me" id="hide_id_<%= profile.id %> %>">
       <%= render 'profiles/actions', object: profile %>
-    </div>
     <% if current_user.admin? %>
       <%= link_to "Delete #{profile.nick_name}", profile, method: :delete, 
           class: "btn btn-danger btn-small", confirm: "Are you sure?,", remote: true %>
     <% end %>
+    </div>
+
   </div>
   <div class= "about_me"><strong>About me: </strong><%= truncate(profile.about_me, length: 300) %></div>
 </div>

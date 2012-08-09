@@ -4,12 +4,8 @@
     <%= f.text_field :keywords, { class: "search_input" } %>
   </div>
   <div class="field">
-    <%= f.label :sex, "I am a #{current_user.profile.sex} looking for: " %><br />
-    <%= f.select :sex, Profile::INTERESTED_TYPES, { include_blank: true }, { class: "interested_in" } %>
-  </div>  
-  <div class="field">
-    <%= f.label :interested_in %><br />
-    <%= f.select :interested_in, Profile::INTERESTED_TYPES, { include_blank: true }, { class: "interested_in" } %>
+    <%= f.label :sex, "I am interested in: " %><br />
+    <%= f.select :sex, [ "Male", "Female", "Both" ], { include_blank: true }, { class: "interested_in" } %>
   </div>
   <div class="field">
     <%= f.label :min_age, "Age Range" %><br />
