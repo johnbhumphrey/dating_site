@@ -128,10 +128,11 @@ span.short_bio {
 	top: 20px;
 
 }
+div.profile_info {
+	min-height: 100px;
+}
 div.profile_info > a {
-	position: absolute;
-	left: 110px;
-	top: 65px;
+
 }
 
 div.hide_me {
@@ -142,6 +143,7 @@ div.hide_me {
 
 div.sidebar_image_thumbnail {
 	position: relative;
+	min-height: 100px;
 }
 
 div.sidebar_hide_me {

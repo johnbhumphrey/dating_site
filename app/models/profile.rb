@@ -6,8 +6,8 @@ class Profile < ActiveRecord::Base
   INTERESTED_TYPES= [ "Male", "Female", "Both" ]  
   RELATIONSHIP_TYPES = [ "Single", "Available", "Separated", "Divorced",
   		"Widower", "Married", "In a relationship" ]
-  BODY_TYPES = [ "No Answer", "Heffer", "Used Up", "Athletic and Toned", "Skinny", 
-  		"Slender", "Fat", "Really Fat", "30 Pounds Heavier than picture" ]		
+  BODY_TYPES = [ "No Answer", "Used Up", "Athletic and Toned", "Skinny", 
+  		"Slender", "Fat"  ]		
   RELIGION_TYPES = [ "No Answer", "Christianity", "Atheism", "Agnostic", "Spiritual but not Religious",
   		"Judaism", "Buddhist", "Other" ]
   INCOME_TYPES = [ "No Answer", "Less than $25,000", "$25000-50000", "$50000-100000", "$100000-250000",
@@ -107,9 +107,11 @@ class Profile < ActiveRecord::Base
     return photos.where(primary: true).first
   end
 
-  def self.generate_random_profiles(profiles, search)
+  def self.generate_random_profiles(profiles, search, search_profile= nil)
     unless search.new_record?
-      profiles= Search.find(search).profiles.limit(10) #if search exists, return the associated profiles
+      profiles= Search.find(search).profiles.limit(15)
+      profiles-= hidden_and_hidden_by(search_profile)
+       #if search exists, return the associated profiles
       #limited at 10, or else just return random profiles as usual
     end  
     size= profiles.count
