@@ -1,14 +1,56 @@
 require 'spec_helper'
 
 describe Profile do
-  describe "The format height function" do
-  	before(:each) do
-  		@height= 65
+  before { @attr= { age: 25, zipcode: '02493', about_me: "valid crap here", 
+  	good_at: "More stuff here", message_me_if: "More stuff", relationship_status: "Single",
+  	sex: "Male", smokes: "No Answer", body_type: "No Answer", height: 72, drinks: "No Answer",
+  	religion: "No Answer", income: "No Answer", job: "No Answer", language: "No Answer",
+  	drugs: "No Answer", offspring: "No Answer", exercise: "No Answer", 
+  	ethnicity: "No Answer", interested_in: "Male" } }	
+  before { @user= FactoryGirl.create(:user) }
+  	
+  describe "creating profiles" do
+  	it "should create a profile with valid attributes" do
+  		@user.build_profile(@attr).should be_valid
+  	end
+  end
+
+  describe "methods" do
+  	before { @profile= @user.create_profile!(@attr) }
+  	  describe "The format height function" do
+	  	it "should return a height formatted in feet and inches" do
+	  		@profile.format_height.should eq(6.to_s+"'"+0.to_s+'"')
+	  	end
+	  end
+
+	  describe "all_visible_profiles method" do
+	  	
+	  end
+  end
+  describe "associations" do
+  	let(:first_profile) { @user.create_profile!(@attr) }
+  	it { should respond_to(:sent_winks) }
+  	it { should respond_to(:received_winks) }
+  	it { should respond_to(:favorites) }
+  	it { should respond_to(:favorited_by) }
+  	it { should respond_to(:views) }
+  	it { should respond_to(:reverse_views) }
+  	it { should respond_to(:viewed_profiles) }
+  	it { should respond_to(:viewed_by) }
+  	it { should respond_to(:searches) }
+  	it { should respond_to(:hidden_profiles) }
+  	it { should respond_to(:reverse_hidden_profiles) }
+  	it { should respond_to(:profiles_hidden) }
+  	it { should respond_to(:profiles_hidden_by) }
+  	it { should respond_to(:sent_messages) }
+  	it { should respond_to(:received_messages) }
+  	it { should respond_to(:photos) }
+  	it { should respond_to(:user) }
+  	it "should have the right associated user" do
+  		first_profile.user_id.should eq(@user.id)
+  		first_profile.user.should eq(@user)
   	end
 
-  	it "should return a height formatted in feet and inches" do
-  		
-  	end
   end
 end
 # == Schema Information

@@ -40,7 +40,7 @@ class Profile < ActiveRecord::Base
   validates :drinks, inclusion: DRINKS_TYPES
   validates :religion, inclusion: RELIGION_TYPES
   validates :income, inclusion: INCOME_TYPES		
-  validates :job, length: { within: 6..50 }
+  validates :job, length: { maximum: 50 }
   validates :language, inclusion: LANGUAGE_TYPES
   validates :drugs, inclusion: DRUGS_TYPES
   validates :offspring, inclusion: OFFSPRING_TYPES

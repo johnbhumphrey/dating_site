@@ -1,7 +1,19 @@
 require 'spec_helper'
 
 describe PrivateMessage do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before do
+    @user= FactoryGirl.create(:user)
+    @other_user= FactoryGirl.create(:other_user)
+    @profile= FactoryGirl.create(:profile, user: @user)
+    @other_profile= FactoryGirl.create(:profile, user: @other_user)
+  	@attr= { body: "Here is the body", receiver_id: @other_profile.id, sender_id: @profile.id}
+  end
+
+  it "should create a new private message with valid attributes" do
+  	PrivateMessage.new(@attr).should be_valid
+  end
+
+
 end
 # == Schema Information
 #

@@ -30,6 +30,12 @@ group :test, :development do
   gem 'annotate', '2.4.1.beta1'
   gem 'factory_girl_rails', '1.6.0'
   gem 'mongrel', '>= 1.2.0.pre2'
+  gem 'guard-rspec', '0.5.5'
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '0.9.0'
+  gem 'growl', '1.0.3'
+  gem 'rb-fsevent', require: false
+  #gem 'rb-fsevent', '0.4.3.1', :require => false
   #gem #'linecache19'#,       '>= 0.5.13'
   #gem #'ruby-debug-base19'#, '>= 0.11.26'
   #gem #'ruby-debug19'
