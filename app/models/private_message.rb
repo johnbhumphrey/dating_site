@@ -17,11 +17,12 @@ class PrivateMessage < ActiveRecord::Base
 
   default_scope order: 'private_messages.created_at DESC'
 
-  validates :body, presence: true, length: { within: 6..5000 }
+  validates :body, presence: true, length: { within: 2..5000 }
 
   def self.current_conversation(sender_id, receiver_id)
-  	messages= sent_messages= self.where('sender_id= ? AND receiver_id= ?', sender_id, receiver_id) +
-  	 received_messages= self.where('sender_id= ? AND receiver_id= ?', receiver_id, sender_id)
+  	sent_messages= self.where('sender_id= ? AND receiver_id= ?', sender_id, receiver_id) 
+	  received_messages= self.where('sender_id= ? AND receiver_id= ?', receiver_id, sender_id)
+    messages= sent_messages+ received_messages
     unless messages.nil?
       i= (sent_messages+ received_messages).index { |f| f.conversation_id==nil }
     	return messages[i] unless i.nil?

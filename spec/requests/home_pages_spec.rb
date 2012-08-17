@@ -40,5 +40,27 @@ describe "HomePages" do
 		end
 		
 	end
+
+	describe "editing a user" do
+		before { valid_signin(user) }
+		before { visit edit_user_path(user) }
+		
+		it { should_not have_content("What do you want your username to be") }
+
+		let(:new_name) { "New Name" }	
+		let(:new_email) { "newemail@example.com" }
+
+		before do
+		  fill_in "Name", with: new_name
+		  fill_in "Email", with: new_email
+		  fill_in "Password", with: user.password
+		  fill_in "Password Confirmation", with: user.password
+		  click_button "Update User"
+		end
+
+		it { response.should have_selector('div.flash.notice', content: "successfully") }
+		specify { user.reload.name.should == new_name }
+		specify { user.reload.email.should eq(new_email)}
+	end
 	
 end

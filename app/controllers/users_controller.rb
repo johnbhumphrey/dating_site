@@ -47,7 +47,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         sign_in(@user)
-        format.html { redirect_to @user, notice: "#{@user.name} was successfully created." }
+        format.html { redirect_to root_path, notice: "#{@user.name} was successfully created." }
         format.json { render json: @user, status: :created, location: @user }
       else
         format.html { render action: "new" }
@@ -90,7 +90,7 @@ class UsersController < ApplicationController
 
   def correct_user
     user= User.find(params[:id])
-    redirect_to current_user, flash: { notice: "you don't have access buddy" } unless current_user==user
+    redirect_to root_url, flash: { notice: "you don't have access buddy" } unless current_user==user
   end
 
   def admin_user

@@ -28,7 +28,7 @@ group :test, :development do
   gem 'capybara'
   gem 'webrat'
   gem 'annotate', '2.4.1.beta1'
-  gem 'factory_girl_rails', '1.6.0'
+  gem 'factory_girl_rails'
   gem 'mongrel', '>= 1.2.0.pre2'
   gem 'guard-rspec', '0.5.5'
   gem 'guard-spork', '0.3.2'

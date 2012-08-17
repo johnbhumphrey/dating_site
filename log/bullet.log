@@ -9361,4 +9361,68 @@ Unused Eager Loading detected
 localhost:3000http://localhost:3000/
 Unused Eager Loading detected
   View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-08-16 14:14:19[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-08-16 14:14:19[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-08-16 14:14:19[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-08-16 14:14:19[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-08-16 14:33:08[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-08-16 14:33:08[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-08-16 14:33:08[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-08-16 14:33:08[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-08-16 15:03:37[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-08-16 15:03:37[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-08-16 15:03:37[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-08-16 15:03:37[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-08-16 17:48:58[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-08-16 17:48:58[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-08-16 17:48:58[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-08-16 17:48:58[WARN] user: csahlman
+localhost:3000http://localhost:3000/
+Unused Eager Loading detected
+  View => [:viewed]
   Remove from your finder: :include => [:viewed]
