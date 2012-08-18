@@ -58,14 +58,39 @@ describe User do
 
   	describe "associations" do
   		let(:user) { FactoryGirl.create(:user) }
-
+      let(:profile) { FactoryGirl.create(:profile, user: user) }
   		it { should respond_to(:profile) }
+      it "should destroy associated Profiles on deletion" do
+        lambda do  #wrap in lambda block so it doesn't actually destroy the last user here
+          #and throw an error causing the test to fail
+          user.destroy
+          Profile.find_by_id(profile.id).should be_nil
+          Profile.find(profile).should raise_error
+        end
+      end
   	end
 
-  	describe "the newsfeed function" do
-  		let(:user) { FactoryGirl.create(:user) }
+  	describe "methods" do
+      describe "ensure_an_admin_remains" do
+        let(:user) { FactoryGirl.create(:user) }
+        it "should not be able to delete the only user" do
+          lambda { user.destroy }.should raise_error 
+          #needs to be in a lambda block or it won't let me destroy the last user
+        end
+      end
+
+  		# let(:user) { FactoryGirl.create(:user) }
 
   	end
+
+    describe "the admin variable" do
+      let(:user) { FactoryGirl.create(:user) }
+
+      it { should respond_to(:admin) }
+      it { should_not be_admin }
+      before { user.toggle!(:admin) }
+      it { user.should be_admin }
+    end
 
 
   

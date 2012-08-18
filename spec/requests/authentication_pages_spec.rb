@@ -37,15 +37,23 @@ describe "AuthenticationPages" do
 	end
 
 	describe "trying to access the wrong user's info" do
-		let(:wrong_user) { FactoryGirl.create(:user) }
-
-
+		let(:wrong_user) { FactoryGirl.create(:user) }	
 		describe "visiting another user's edit info" do
 			before { valid_signin(user) }
 			before { get edit_user_path(wrong_user) }
 			specify { response.should redirect_to(root_path)}
 		end
 	end
-	after { User.delete_all }
+
+	describe "profiles" do
+		let(:profile) { FactoryGirl.create(:profile, user: user) }
+		let(:wrong_user) { FactoryGirl.create(:user) }
+		let(:wrong_profile) { FactoryGirl.create(:profile, user: wrong_user)}
+
+		describe "when not signed in" do
+			
+		end
+	end
+
 
 end

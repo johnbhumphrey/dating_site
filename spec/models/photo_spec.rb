@@ -1,7 +1,27 @@
 require 'spec_helper'
 
 describe Photo do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:user) { FactoryGirl.create(:user) }
+  let(:profile) { FactoryGirl.create(:profile, user: user) }		
+  it { should have_attached_file(:avatar) }
+  it { should validate_attachment_presence(:avatar) }
+  it { should validate_attachment_content_type(:avatar).
+                allowing('image/png', 'image/gif', 'image/jpg', 'image/jpeg').
+                rejecting('text/plain', 'text/xml') }
+  it { should validate_attachment_size(:avatar) }
+  let(:long_caption) { 'a'*141 }
+  # it "should reject long captions" do
+  # 	Photo.new(caption: long_caption).should_not be_valid
+  # end
+  # it "should accept a caption between 0 and 140" do
+  # 	Photo.new().should be_valid
+  # end
+# not working yet figure it out later!
+  describe "associations" do
+  	
+  end
+
+
 end
 # == Schema Information
 #

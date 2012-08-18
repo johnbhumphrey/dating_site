@@ -8,6 +8,11 @@ class Photo < ActiveRecord::Base
       :access_key_id => 'AKIAJWWS4KURC6ODGJGQ',
       :secret_access_key => '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'
     }
+  validates :avatar, :attachment_presence => true, allow_blank: true
+  validates_attachment_content_type :avatar, content_type: 
+    ['image/jpeg', 'image/png', 'image/gif', 'image/jpg' ]
+  validates :caption, length: { maximum: 140 }
+
 
   belongs_to :profile, counter_cache: true
    	

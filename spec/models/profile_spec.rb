@@ -27,6 +27,19 @@ describe Profile do
 	  	
 	  end
   end
+
+  describe "listing of profiles" do
+    let(:second_user) { FactoryGirl.create(:user) }
+    let!(:newer_profile) { FactoryGirl.create(:profile, user: @user) }
+    let!(:older_profile) { FactoryGirl.create(:profile, user: second_user, 
+      created_at: 2.hours.ago) }
+    let!(:middle_profile) { FactoryGirl.create(:profile, user: FactoryGirl.create(:user), 
+      created_at: 1.hour.ago) }   
+    it "should have the microposts in the right order" do
+      Profile.all.should == [newer_profile, middle_profile, older_profile]
+    end
+
+  end
   describe "associations" do
   	let(:first_profile) { @user.create_profile!(@attr) }
   	it { should respond_to(:sent_winks) }
@@ -50,7 +63,6 @@ describe Profile do
   		first_profile.user_id.should eq(@user.id)
   		first_profile.user.should eq(@user)
   	end
-
   end
 end
 # == Schema Information

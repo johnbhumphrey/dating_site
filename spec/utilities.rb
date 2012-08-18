@@ -5,3 +5,4 @@ def valid_signin(user)
   click_button "Login"
   cookies[:remember_token] = user.remember_token
 end
+
