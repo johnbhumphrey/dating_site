@@ -3,6 +3,9 @@ require 'spec_helper'
 describe "AuthenticationPages" do
 	before { visit login_path }
 	let(:user) { FactoryGirl.create(:user) }
+	let(:profile) { FactoryGirl.create(:profile, user: user) }
+	let(:wrong_user) { FactoryGirl.create(:user) }
+	let(:wrong_profile) { FactoryGirl.create(:profile, user: wrong_user)}
 	describe "sign_in page" do
 		it "should have a login prompt" do
 			response.should have_selector('body', content: "Please Log In")
@@ -37,7 +40,6 @@ describe "AuthenticationPages" do
 	end
 
 	describe "trying to access the wrong user's info" do
-		let(:wrong_user) { FactoryGirl.create(:user) }	
 		describe "visiting another user's edit info" do
 			before { valid_signin(user) }
 			before { get edit_user_path(wrong_user) }
@@ -45,13 +47,66 @@ describe "AuthenticationPages" do
 		end
 	end
 
-	describe "profiles" do
-		let(:profile) { FactoryGirl.create(:profile, user: user) }
-		let(:wrong_user) { FactoryGirl.create(:user) }
-		let(:wrong_profile) { FactoryGirl.create(:profile, user: wrong_user)}
+	describe "profiles authorization" do
+		before do
+		  user.profile= profile
+		  wrong_user.profile= wrong_profile
+		end
 
 		describe "when not signed in" do
-			
+			before { get profiles_path } #need get path instead of visit to work
+			specify { response.should redirect_to(login_path) }
+			before { get edit_profile_path(user) }
+			specify { response.should redirect_to(login_path)}
+		end
+
+		describe "when signed in" do
+			before { valid_signin(user) }
+			before { get profiles_path }
+			it { response.should be_success }
+			it "should not be allowed to edit other profiles" do
+				get edit_profile_path(wrong_profile) #visit will give success even on redirect
+				response.should_not be_success #get will give an error
+				response.should redirect_to(root_path)
+			end
+			it "should redirect with a flash error" do
+				visit edit_profile_path(wrong_profile)
+				response.should have_selector('div.error')
+			end
+			it "should not be allowed to update other profiles" do
+				put profile_path(wrong_profile)	
+				response.should redirect_to root_path
+			end
+			it "should be allowed to update own profile" do
+				visit edit_profile_path(profile)
+				click_button "Submit Profile"
+				response.should have_selector('div.success')
+			end
+
+			describe "deletion of profiles" do
+				describe "as a non admin" do
+					it "should not delete someone else's profile if not an admin" do
+						expect { delete profile_path(wrong_profile) }.not_to change(Profile, :count)
+					end
+					it "should be able to delete their own profile" do
+						expect { delete profile_path(user) }.to change(Profile, :count).by(-1)
+					end
+
+				end
+				describe "as an administrator" do
+					before { user.toggle!(:admin) }
+					it "should delete another profile" do
+						expect { delete profile_path(wrong_profile) }.to change(Profile, :count).by(-1)
+					end
+				end
+			end 
+		end
+	end
+
+	describe "private messages authorization" do
+		before do
+		  user.profile= profile
+		  wrong_user.profile= wrong_profile
 		end
 	end
 

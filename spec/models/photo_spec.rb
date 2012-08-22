@@ -10,6 +10,8 @@ describe Photo do
                 rejecting('text/plain', 'text/xml') }
   it { should validate_attachment_size(:avatar) }
   let(:long_caption) { 'a'*141 }
+  let(:photo) { Photo.new() }
+  it { photo.should_not be_valid }
   # it "should reject long captions" do
   # 	Photo.new(caption: long_caption).should_not be_valid
   # end
@@ -18,7 +20,8 @@ describe Photo do
   # end
 # not working yet figure it out later!
   describe "associations" do
-  	
+  	it { should respond_to(:profile) }
+
   end
 
 

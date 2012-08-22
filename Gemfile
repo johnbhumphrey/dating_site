@@ -23,12 +23,12 @@ end
 
 group :test, :development do
   gem 'sqlite3'
-  gem 'rspec-rails', '2.8.1'
-  gem 'rspec'
+  gem 'rspec-rails', '~> 2.10.1'
+  gem 'rspec', '~>2.10.0'
   gem 'capybara'
   gem 'webrat'
   gem 'annotate', '2.4.1.beta1'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', "~> 3.2.0"
   gem 'mongrel', '>= 1.2.0.pre2'
   gem 'guard-rspec', '0.5.5'
   gem 'guard-spork', '0.3.2'

@@ -36,6 +36,33 @@ describe PrivateMessage do
         #just putting in a value that would never show up in a test
       end
     end
+
+    describe "testing the factory" do
+      let!(:m1) { create(:private_message, sender: profile, 
+          receiver: other_profile, created_at: 1.day.ago ) }
+      let!(:m2) { create(:reply, sender: other_profile, receiver: profile,
+          conversation: m1, created_at: 5.hours.ago)}
+      let!(:m3) { create(:reply, sender: profile, receiver: other_profile,
+          conversation: m1, created_at: 3.hours.ago)}
+      let!(:m4) { create(:reply, sender: other_profile, receiver: profile,
+          conversation: m1, created_at: 7.hours.ago)}
+      let!(:m5) { create(:reply, sender: other_profile, receiver: profile,
+          conversation: m1, created_at: 2.hours.ago)}
+      
+      it "should return the head message" do
+        PrivateMessage.current_conversation(profile, other_profile).should
+            eq(m1)
+        PrivateMessage.current_conversation(other_profile, profile).should eq(m1)  
+        m1.conversation_id.should be_nil  
+      end
+      it "returns all 4 replies" do
+        m1.replies.count.should == 4
+      end
+      it "returns the replies in descending order" do
+        m1.replies.should == [ m5, m3, m2, m4 ]
+      end
+
+    end
   end
 
   describe "validations" do

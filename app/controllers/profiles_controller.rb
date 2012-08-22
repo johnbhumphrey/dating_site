@@ -1,4 +1,5 @@
 class ProfilesController < ApplicationController
+  require 'will_paginate/array'
   before_filter :must_have_profile, only: [ :update, :show, :edit, :index ]
   before_filter :must_be_own_profile, only: [ :update, :edit ]
   before_filter :admin_user_or_own_profile, only: [:destroy]
