@@ -3,6 +3,8 @@ class Hidden < ActiveRecord::Base
 
   belongs_to :sender, class_name: "Profile", foreign_key: "sender_id"
   belongs_to :receiver, class_name: "Profile", foreign_key: "receiver_id"
+
+  validates_presence_of :receiver_id, :sender_id
 end
 # == Schema Information
 #

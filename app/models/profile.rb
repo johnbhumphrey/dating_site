@@ -149,6 +149,10 @@ class Profile < ActiveRecord::Base
     hidden_profiles.find_by_receiver_id(profile.id)
   end
 
+  def hide(profile)
+    hidden_profiles.create!(receiver_id: profile.id)
+  end
+
 end
 # == Schema Information
 #

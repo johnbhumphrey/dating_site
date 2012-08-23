@@ -102,13 +102,4 @@ describe "AuthenticationPages" do
 			end 
 		end
 	end
-
-	describe "private messages authorization" do
-		before do
-		  user.profile= profile
-		  wrong_user.profile= wrong_profile
-		end
-	end
-
-
 end

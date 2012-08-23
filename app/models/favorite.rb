@@ -3,6 +3,7 @@ class Favorite < ActiveRecord::Base
   belongs_to :favoriter, class_name: 'Profile', foreign_key: 'favoriter_id'
   belongs_to :favoritee, class_name: 'Profile', foreign_key: 'favoritee_id'
 
+  validates_presence_of :favoritee_id, :favoriter_id
   validates_uniqueness_of :favoritee_id, scope: :favoriter_id
 
 

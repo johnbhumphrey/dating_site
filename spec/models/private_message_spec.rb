@@ -38,6 +38,7 @@ describe PrivateMessage do
     end
 
     describe "testing the factory" do
+
       let!(:m1) { create(:private_message, sender: profile, 
           receiver: other_profile, created_at: 1.day.ago ) }
       let!(:m2) { create(:reply, sender: other_profile, receiver: profile,
@@ -47,8 +48,7 @@ describe PrivateMessage do
       let!(:m4) { create(:reply, sender: other_profile, receiver: profile,
           conversation: m1, created_at: 7.hours.ago)}
       let!(:m5) { create(:reply, sender: other_profile, receiver: profile,
-          conversation: m1, created_at: 2.hours.ago)}
-      
+          conversation: m1, created_at: 2.hours.ago)} 
       it "should return the head message" do
         PrivateMessage.current_conversation(profile, other_profile).should
             eq(m1)

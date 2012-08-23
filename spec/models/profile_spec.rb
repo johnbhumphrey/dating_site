@@ -23,8 +23,56 @@ describe Profile do
 	  	end
 	  end
 
-	  describe "all_visible_profiles method" do
-	  	
+	  describe "methods" do
+	  	before do
+        25.times do |f|
+          create(:profile, user: create(:user))
+        end  
+        5.times do |f|
+          Profile.last.hide(Profile.find(f+5))
+        end  
+      end
+      describe "all_visible_profiles" do
+        it "should return all profiles minus the 5 that were hidden" do
+          Profile.all_visible_profiles(Profile.last).count.should== 20
+        end
+        it "should not include the hider profile" do
+          Profile.all_visible_profiles(Profile.last).should_not include(Profile.last)
+        end 
+      end
+      describe "hidden_and_hidden_by" do
+        before do
+          5.times do |f|
+            Profile.find(f+10).hide(Profile.last)
+          end  
+        end
+
+        it "should return all hidden profiles plus people who hid them" do
+          Profile.hidden_and_hidden_by(Profile.last).count.should == 10
+        end
+
+        it "should not include the Profile in question" do
+          Profile.hidden_and_hidden_by(Profile.last).should_not include(Profile.last)
+        end
+      end
+
+      describe "generate random profiles" do
+        let!(:saved_search) { create(:search, profile: Profile.last) }
+
+        it "take an optional new search profile parameter" do
+          Profile.generate_random_profiles(Profile.all, Search.new).count.should == 3
+        end
+        it "should take a saved search parameter as well" do
+          Profile.generate_random_profiles(Profile.all, saved_search, Profile.last).count.should == 3
+        end
+        it "should return an empty array if no profiles are passed in" do
+          Profile.generate_random_profiles([], Search.new).count.should == 0
+        end
+      end
+
+      describe "sent_wink? method" do
+        
+      end
 	  end
   end
 

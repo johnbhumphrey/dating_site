@@ -1,7 +1,26 @@
 require 'spec_helper'
 
 describe Search do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:profile) { create(:profile, user: create(:user)) }
+  before(:all) { 25.times { |f| create(:profile, user: create(:user))} }
+  let(:default_search) { profile.searches.create! }
+  after(:all) do
+    User.delete_all
+    Profile.delete_all
+  end  
+  describe "methods" do
+  	
+  	describe "profiles" do
+  		it "should return all profiles if search is empty" do
+  			default_search.profiles.count.should == 26
+  		end
+  	end
+  end
+
+  describe "associations" do
+  	it { should respond_to :profile }
+    it { should_not respond_to :find_profiles }
+  end
 end
 # == Schema Information
 #

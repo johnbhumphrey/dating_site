@@ -1,15 +1,12 @@
 class PrivateMessagesController < ApplicationController
   before_filter :must_have_profile
+  before_filter :correct_message_viewer, only: [ :show ]
 
   def new
     
   end
 
   def show
-  	@current_message= PrivateMessage.find(params[:id])
-  	unless (current_user.profile.id==@current_message.receiver_id) || (current_user.profile.id== @current_message.sender_id)
-  		redirect_to root_path, flash: { error: "You don't have permission to access this page."}
-  	end
     if @current_message.conversation   #this bit of ensures the conversation head gets passed in
       @current_message= @current_message.conversation         
     end 
@@ -48,6 +45,13 @@ class PrivateMessagesController < ApplicationController
     def must_have_profile
       if current_user.profile.nil?
         redirect_to new_profile_path, flash: { notice: "Please create a profile to view other profiles."}
+      end
+    end
+
+    def correct_message_viewer
+      @current_message= PrivateMessage.find(params[:id])
+      unless (current_user.profile.id==@current_message.receiver_id) || (current_user.profile.id== @current_message.sender_id)
+        redirect_to root_path, flash: { error: "You don't have permission to access this page."}
       end
     end
 

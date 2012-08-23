@@ -30,6 +30,18 @@ FactoryGirl.define do
   	association :user
   end  
 
+  factory :search do
+    min_age 18
+    max_age 35
+    min_height 35
+    max_height 80
+    sex "Male"
+    relationship_status "Single"
+    interested_in "Male"
+    save_search true
+    association :profile
+  end  
+
   factory :private_message do |f|
     f.sequence(:body) { |n| "This is a body of a message :) #{n}" }
     f.association :sender, factory: :profile
@@ -39,27 +51,5 @@ FactoryGirl.define do
         sequence(:body) { |n| "This is a body of message #{n}" }
         association :conversation
       end  
-
-      # factory :reply do
-      #   f
-      #   after_build do |reply|
-      #     create(:private_message).replies << reply
-      #   end  
-      # end  
   end  
-
-  # factory :reply do
-  #   association :private_message
-  #   sequence(:body) { |n| "This is a body of a message :) #{n}" }
-  #   association :sender, factory: :profile
-  #   association :receiver, factory: :profile
-
-  #   after_build do |f| 
-  #     head_message.replies << f
-  #   end  
-
-
-  # end  
-
-
 end
