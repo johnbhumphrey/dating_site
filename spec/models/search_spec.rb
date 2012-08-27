@@ -9,7 +9,8 @@ describe Search do
     Profile.delete_all
   end  
   describe "methods" do
-  	
+  	it { should_not respond_to :find_profiles }
+    it { should respond_to :profiles }
   	describe "profiles" do
   		it "should return all profiles if search is empty" do
   			default_search.profiles.count.should == 26
@@ -19,7 +20,6 @@ describe Search do
 
   describe "associations" do
   	it { should respond_to :profile }
-    it { should_not respond_to :find_profiles }
   end
 end
 # == Schema Information

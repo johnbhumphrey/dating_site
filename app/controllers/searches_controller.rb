@@ -18,6 +18,7 @@ class SearchesController < ApplicationController
   def show
   	@search= Search.find(params[:id])
     @profiles= (@search.profiles.visible - Profile.hidden_and_hidden_by(current_user.profile))
+    current_user.profile.hide_own_profile(@profiles)
     @profiles_count= @profiles.count
     @profiles= @profiles.paginate(page: params[:page], per_page: 20)
   end

@@ -38,6 +38,7 @@ class ProfilesController < ApplicationController
 
   def index
     @profiles= Profile.all_visible_profiles(current_user.profile).paginate(page: params[:page], per_page: 20)
+    current_user.profile.hide_own_profile(@profiles)
     @search= current_user.profile.searches.first || Search.new
     #@side_profiles= Profile.generate_random_profiles(@profiles.all, @search)
   end

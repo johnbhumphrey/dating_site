@@ -62,5 +62,37 @@ describe "HomePages" do
 		specify { user.reload.name.should == new_name }
 		specify { user.reload.email.should eq(new_email)}
 	end
+
+	describe "the newsfeed" do
+		let(:profile) { create(:profile, user: user) }
+		let(:p2) { create(:profile, user: create(:user)) }
+		let(:p3) { create(:profile, user: create(:user)) }
+		let(:p4) { create(:profile, user: create(:user)) }
+		before do 
+			user.profile= profile
+			valid_signin(user)
+		end	
+		# before { user.profile=  }
+
+		it "should visit the other profiles and create a newsfeed" do
+			visit profile_path(p2)
+			response.should have_selector('body', content: p2.nick_name)
+			click_button "Favorite User"
+			response.should have_selector('div.success', content: "TURN ON YOUR JS NUB")
+			visit profile_path(p3)
+			response.should have_selector('h2', content: p3.nick_name)
+			click_button "Send Wink"
+			response.should have_selector('div.success', content: "Wink sent!")
+			visit profile_path(p4)
+			click_button "Hide User"
+			response.should have_selector('div.notice', content: "naahh")
+			response.should have_selector('li', content: "Viewed #{p2.nick_name}")
+			response.should have_selector('li', content: "Viewed #{p3.nick_name}")
+			response.should have_selector('li', content: "Viewed #{p4.nick_name}")
+			response.should have_selector('li', content: "winked at #{p3.nick_name}")
+			response.should have_selector('li', content: "favorited #{p2.nick_name}")
+			response.should_not have_selector('li', content: "hid")	
+		end
+	end
 	
 end

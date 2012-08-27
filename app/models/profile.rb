@@ -99,6 +99,10 @@ class Profile < ActiveRecord::Base
     hidden_pro
   end
 
+  def hide_own_profile(profiles)
+    profiles.slice!(profiles.index(self)) if profiles.include?(self)
+  end
+
   def has_main_photo?
     return photos.where(primary: true).first
   end
