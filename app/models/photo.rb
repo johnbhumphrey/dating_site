@@ -5,8 +5,8 @@ class Photo < ActiveRecord::Base
     :storage => :s3,
     :bucket => 'csahlman',
     :s3_credentials => {
-      :access_key_id => 'AKIAJWWS4KURC6ODGJGQ',
-      :secret_access_key => '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'
+      :access_key_id => 'ENV',
+      :secret_access_key => '/asdf'
     }
   validates :avatar, :attachment_presence => true, allow_blank: true
   validates_attachment_content_type :avatar, content_type: 
