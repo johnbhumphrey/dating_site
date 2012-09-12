@@ -99,14 +99,17 @@ end
 #
 # Table name: users
 #
-#  id              :integer         not null, primary key
-#  name            :string(255)
-#  password_digest :string(255)
-#  email           :string(255)
-#  admin           :boolean         default(FALSE)
-#  created_at      :datetime        not null
-#  updated_at      :datetime        not null
-#  nick_name       :string(255)
-#  remember_token  :string(255)
+#  id                   :integer         not null, primary key
+#  name                 :string(255)
+#  password_digest      :string(255)
+#  email                :string(255)
+#  admin                :boolean         default(FALSE)
+#  created_at           :datetime        not null
+#  updated_at           :datetime        not null
+#  nick_name            :string(255)
+#  remember_token       :string(255)
+#  forem_admin          :boolean         default(FALSE)
+#  forem_state          :string(255)     default("pending_review")
+#  forem_auto_subscribe :boolean         default(FALSE)
 #
 

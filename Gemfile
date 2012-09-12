@@ -53,6 +53,9 @@ gem "bullet", :group => "development"
 gem 'heroku'
 gem 'forem', :git => "git://github.com/radar/forem.git"
 gem 'forem-theme-base', :git => "git://github.com/radar/forem-theme-base.git"
+gem 'announcements'
+gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
+gem "fastercsv", :platform => :ruby_18
 
 
 # To use Jbuilder templates for JSON
