@@ -11309,4 +11309,40 @@ N+1 Query method call stack
   N+1 Query method call stack
   N+1 Query method call stack
   /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:44:in `_app_views_forem_posts__post_html_erb__696091557__637223908'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__419685455__634784508'2012-09-12 18:00:03[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/heyyyyy-sexy-lady
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__696091557__637223908'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__419685455__634784508'2012-09-12 18:00:03[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/heyyyyy-sexy-lady
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:36:in `_app_views_forem_posts__post_html_erb__696091557__637223908'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__419685455__634784508'2012-09-12 18:00:03[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/heyyyyy-sexy-lady
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:44:in `_app_views_forem_posts__post_html_erb__696091557__637223908'
   /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__419685455__634784508'
