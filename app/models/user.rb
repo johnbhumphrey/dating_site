@@ -32,6 +32,14 @@ class User < ActiveRecord::Base
     feed_items.sort_by {|f| f[:created_at]}
   end
 
+  def to_s
+    if profile
+      profile.nick_name
+    else
+      nick_name  # needed for forem
+    end
+  end
+
   private
 
     def create_remember_token

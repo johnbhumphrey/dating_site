@@ -9723,4 +9723,550 @@ Unused Eager Loading detected
 localhost:3000http://localhost:3000/
 Unused Eager Loading detected
   View => [:viewed]
-  Remove from your finder: :include => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 09:02:23[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 09:02:23[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 09:02:23[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 09:02:23[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 09:42:06[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 09:42:06[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 09:42:06[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 09:42:06[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 09:45:30[WARN] user: csahlman
+dev:3000/forums/forums/dating
+N+1 Query detected
+  Forem::Topic => [:forum]
+  Add to your finder: :include => [:forum]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:16:in `_app_views_forem_topics__topic_html_erb___567919416__637375298'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb___816758911_94876980'2012-09-12 09:45:37[WARN] user: csahlman
+dev:3000/forums/forums/dating
+N+1 Query detected
+  Forem::Topic => [:forum]
+  Add to your finder: :include => [:forum]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:16:in `_app_views_forem_topics__topic_html_erb___567919416__637375298'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb___816758911_94876980'2012-09-12 09:49:26[WARN] user: csahlman
+dev:3000/forums/forums/dating
+N+1 Query detected
+  Forem::Topic => [:forum]
+  Add to your finder: :include => [:forum]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:16:in `_app_views_forem_topics__topic_html_erb___567919416__637375298'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb___816758911_94876980'2012-09-12 09:52:06[WARN] user: csahlman
+dev:3000/forums/forums/dating
+N+1 Query detected
+  Forem::Topic => [:forum]
+  Add to your finder: :include => [:forum]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:16:in `_app_views_forem_topics__topic_html_erb___40995039_91162470'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb___590216754_85829340'2012-09-12 09:54:59[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 09:54:59[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 09:55:44[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb___140421195_78083280'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb___489234470__637630438'2012-09-12 09:55:44[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb___140421195_78083280'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb___489234470__637630438'2012-09-12 09:55:44[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb___140421195_78083280'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb___489234470__637630438'2012-09-12 10:02:30[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:02:30[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:02:30[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:22[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:22[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:22[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:44[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:44[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:44[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:45[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:45[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:45[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:58[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:58[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:03:58[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:04:14[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:04:14[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:04:14[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:04:26[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:04:26[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:04:26[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:04:38[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:04:38[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:04:38[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem?page=1
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:07:38[WARN] user: csahlman
+dev:3000/forums/forums/dating
+N+1 Query detected
+  Forem::Topic => [:forum]
+  Add to your finder: :include => [:forum]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:16:in `_app_views_forem_topics__topic_html_erb__33478355__633702408'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb__259196132_82386020'2012-09-12 10:07:43[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:07:43[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:07:43[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb__1048735011_82587130'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb__878551495_82004080'2012-09-12 10:08:29[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb___664951298_89548470'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb___569716054__639399318'2012-09-12 10:08:29[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb___664951298_89548470'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb___569716054__639399318'2012-09-12 10:08:29[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb___664951298_89548470'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb___569716054__639399318'2012-09-12 10:10:09[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem
+N+1 Query detected
+  Forem::Post => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:6:in `_app_views_forem_posts__post_html_erb___664951298_89548470'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb___569716054__639399318'2012-09-12 10:10:09[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem
+N+1 Query detected
+  Forem::Post => [:topic]
+  Add to your finder: :include => [:topic]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:15:in `_app_views_forem_posts__post_html_erb___664951298_89548470'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb___569716054__639399318'2012-09-12 10:10:09[WARN] user: csahlman
+dev:3000/forums/forums/dating/topics/welcome-to-forem
+N+1 Query detected
+  Forem::Post => [:reply_to]
+  Add to your finder: :include => [:reply_to]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/posts/_post.html.erb:32:in `_app_views_forem_posts__post_html_erb___664951298_89548470'
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/show.html.erb:40:in `_app_views_forem_topics_show_html_erb___569716054__639399318'

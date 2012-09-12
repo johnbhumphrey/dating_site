@@ -6598,3 +6598,205 @@ REQUESTING PAGE: GET http://www.example.com/searches/1 with {} and HTTP headers 
 REQUESTING PAGE: GET /searches/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/searches/1"}
 REQUESTING PAGE: POST /searches/1 with {"utf8"=>"✓", "_method"=>"put", "search"=>{"keywords"=>"", "sex"=>"Female", "min_age"=>"", "max_age"=>"", "min_height"=>"", "max_height"=>"", "save_search"=>"0"}, "commit"=>"Search"} and HTTP headers {"HTTP_REFERER"=>"/searches/new"}
 REQUESTING PAGE: GET http://www.example.com/searches/1 with {} and HTTP headers {"HTTP_REFERER"=>"/searches/1"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_1@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /searches/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /searches with {"utf8"=>"✓", "search"=>{"keywords"=>"", "sex"=>"", "min_age"=>"", "max_age"=>"", "min_height"=>"", "max_height"=>"", "save_search"=>"0"}, "commit"=>"Search"} and HTTP headers {"HTTP_REFERER"=>"/searches/new"}
+REQUESTING PAGE: GET http://www.example.com/searches/1 with {} and HTTP headers {"HTTP_REFERER"=>"/searches"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_29@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /searches/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /searches with {"utf8"=>"✓", "search"=>{"keywords"=>"", "sex"=>"Female", "min_age"=>"", "max_age"=>"", "min_height"=>"", "max_height"=>"", "save_search"=>"0"}, "commit"=>"Search"} and HTTP headers {"HTTP_REFERER"=>"/searches/new"}
+REQUESTING PAGE: GET http://www.example.com/searches/1 with {} and HTTP headers {"HTTP_REFERER"=>"/searches"}
+REQUESTING PAGE: GET /searches/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/searches/1"}
+REQUESTING PAGE: POST /searches/1 with {"utf8"=>"✓", "_method"=>"put", "search"=>{"keywords"=>"", "sex"=>"Female", "min_age"=>"", "max_age"=>"", "min_height"=>"", "max_height"=>"", "save_search"=>"0"}, "commit"=>"Search"} and HTTP headers {"HTTP_REFERER"=>"/searches/new"}
+REQUESTING PAGE: GET http://www.example.com/searches/1 with {} and HTTP headers {"HTTP_REFERER"=>"/searches/1"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"", "password"=>"", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_57@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_58@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_60@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/users/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_61@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_67@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_69@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_71@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/profiles/2/edit"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_73@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_75@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /profiles/1 with {"utf8"=>"✓", "_method"=>"put", "profile"=>{"age"=>"25", "sex"=>"Male", "interested_in"=>"Male", "zipcode"=>"02493", "about_me"=>"\nvalid crap here", "good_at"=>"\nmore valid", "message_me_if"=>"", "body_type"=>"No Answer", "relationship_status"=>"Single", "smokes"=>"No Answer", "height"=>"72", "ethnicity"=>"No Answer", "drinks"=>"No Answer", "religion"=>"No Answer", "income"=>"No Answer", "job"=>"No Answer", "language"=>"No Answer", "drugs"=>"No Answer", "offspring"=>"No Answer", "exercise"=>"No Answer"}, "commit"=>"Submit Profile"} and HTTP headers {"HTTP_REFERER"=>"/profiles/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/profiles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/profiles/1"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_77@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_79@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_81@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_83@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/2 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /private_messages with {"utf8"=>"✓", "private_message"=>{"receiver_id"=>"2", "sender_id"=>"1", "body"=>"This is a test message 1"}, "commit"=>"Send Message!"} and HTTP headers {"HTTP_REFERER"=>"/profiles/2"}
+REQUESTING PAGE: GET http://www.example.com/private_messages/6 with {} and HTTP headers {"HTTP_REFERER"=>"/private_messages"}
+REQUESTING PAGE: POST /private_messages with {"utf8"=>"✓", "private_message"=>{"receiver_id"=>"2", "sender_id"=>"1", "body"=>"This is a test message 2"}, "commit"=>"Send Message!"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/private_messages/6"}
+REQUESTING PAGE: GET http://www.example.com/private_messages/7 with {} and HTTP headers {"HTTP_REFERER"=>"/private_messages"}
+REQUESTING PAGE: POST /private_messages with {"utf8"=>"✓", "private_message"=>{"receiver_id"=>"2", "sender_id"=>"1", "body"=>"This is a test message 3"}, "commit"=>"Send Message!"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/private_messages/7"}
+REQUESTING PAGE: GET http://www.example.com/private_messages/8 with {} and HTTP headers {"HTTP_REFERER"=>"/private_messages"}
+REQUESTING PAGE: GET /private_messages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/private_messages/8"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_85@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /private_messages with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET /private_messages/1 with {} and HTTP headers {"HTTP_REFERER"=>"/private_messages"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_87@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_90@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_93@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_94@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /profiles with {"utf8"=>"✓", "profile"=>{"age"=>"", "sex"=>"", "interested_in"=>"", "zipcode"=>"", "about_me"=>"", "good_at"=>"", "message_me_if"=>"", "body_type"=>"No Answer", "relationship_status"=>"", "smokes"=>"No Answer", "height"=>"65", "ethnicity"=>"No Answer", "drinks"=>"No Answer", "religion"=>"No Answer", "income"=>"No Answer", "job"=>"no answer", "language"=>"No Answer", "drugs"=>"No Answer", "offspring"=>"No Answer", "exercise"=>"No Answer"}, "commit"=>"Submit Profile"} and HTTP headers {"HTTP_REFERER"=>"/profiles/new"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_95@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /profiles with {"utf8"=>"✓", "profile"=>{"age"=>"", "sex"=>"", "interested_in"=>"", "zipcode"=>"", "about_me"=>"", "good_at"=>"", "message_me_if"=>"", "body_type"=>"No Answer", "relationship_status"=>"", "smokes"=>"No Answer", "height"=>"65", "ethnicity"=>"No Answer", "drinks"=>"No Answer", "religion"=>"No Answer", "income"=>"No Answer", "job"=>"no answer", "language"=>"No Answer", "drugs"=>"No Answer", "offspring"=>"No Answer", "exercise"=>"No Answer"}, "commit"=>"Submit Profile"} and HTTP headers {"HTTP_REFERER"=>"/profiles/new"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_96@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /profiles with {"utf8"=>"✓", "profile"=>{"age"=>"20", "sex"=>"Male", "interested_in"=>"Female", "zipcode"=>"02493", "about_me"=>"", "good_at"=>"", "message_me_if"=>"", "body_type"=>"No Answer", "relationship_status"=>"Single", "smokes"=>"No Answer", "height"=>"65", "ethnicity"=>"No Answer", "drinks"=>"No Answer", "religion"=>"No Answer", "income"=>"No Answer", "job"=>"no answer", "language"=>"No Answer", "drugs"=>"No Answer", "offspring"=>"No Answer", "exercise"=>"No Answer"}, "commit"=>"Submit Profile"} and HTTP headers {"HTTP_REFERER"=>"/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/profiles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/profiles"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_97@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /profiles with {"utf8"=>"✓", "profile"=>{"age"=>"20", "sex"=>"Male", "interested_in"=>"Female", "zipcode"=>"02493", "about_me"=>"", "good_at"=>"", "message_me_if"=>"", "body_type"=>"No Answer", "relationship_status"=>"Single", "smokes"=>"No Answer", "height"=>"65", "ethnicity"=>"No Answer", "drinks"=>"No Answer", "religion"=>"No Answer", "income"=>"No Answer", "job"=>"no answer", "language"=>"No Answer", "drugs"=>"No Answer", "offspring"=>"No Answer", "exercise"=>"No Answer"}, "commit"=>"Submit Profile"} and HTTP headers {"HTTP_REFERER"=>"/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/profiles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/profiles"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_98@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_99@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_100@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /profiles/1 with {"utf8"=>"✓", "_method"=>"put", "profile"=>{"age"=>"25", "sex"=>"Male", "interested_in"=>"Male", "zipcode"=>"02493", "about_me"=>"\nvalid crap here", "good_at"=>"\nmore valid", "message_me_if"=>"", "body_type"=>"No Answer", "relationship_status"=>"Single", "smokes"=>"No Answer", "height"=>"72", "ethnicity"=>"No Answer", "drinks"=>"No Answer", "religion"=>"No Answer", "income"=>"No Answer", "job"=>"No Answer", "language"=>"No Answer", "drugs"=>"No Answer", "offspring"=>"No Answer", "exercise"=>"No Answer"}, "commit"=>"Submit Profile"} and HTTP headers {"HTTP_REFERER"=>"/profiles/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/profiles/1 with {} and HTTP headers {"HTTP_REFERER"=>"/profiles/1"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_101@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /profiles/1 with {"utf8"=>"✓", "_method"=>"put", "profile"=>{"age"=>"25", "sex"=>"Male", "interested_in"=>"Male", "zipcode"=>"asdf", "about_me"=>"\nvalid crap here", "good_at"=>"\nmore valid", "message_me_if"=>"", "body_type"=>"No Answer", "relationship_status"=>"Single", "smokes"=>"No Answer", "height"=>"72", "ethnicity"=>"No Answer", "drinks"=>"No Answer", "religion"=>"No Answer", "income"=>"No Answer", "job"=>"No Answer", "language"=>"No Answer", "drugs"=>"No Answer", "offspring"=>"No Answer", "exercise"=>"No Answer"}, "commit"=>"Submit Profile"} and HTTP headers {"HTTP_REFERER"=>"/profiles/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {}
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "nick_name"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Create User"} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "nick_name"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Create User"} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"example@example.com", "nick_name"=>"ExampleUser", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Create User"} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"example@example.com", "nick_name"=>"ExampleUser", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Create User"} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_102@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /users/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /users/1 with {"utf8"=>"✓", "_method"=>"put", "user"=>{"name"=>"New Name", "email"=>"newemail@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Update User"} and HTTP headers {"HTTP_REFERER"=>"/users/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users/1"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_103@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /users/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /users/1 with {"utf8"=>"✓", "_method"=>"put", "user"=>{"name"=>"New Name", "email"=>"newemail@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Update User"} and HTTP headers {"HTTP_REFERER"=>"/users/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users/1"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_104@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /users/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /users/1 with {"utf8"=>"✓", "_method"=>"put", "user"=>{"name"=>"New Name", "email"=>"newemail@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Update User"} and HTTP headers {"HTTP_REFERER"=>"/users/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users/1"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_105@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /users/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /users/1 with {"utf8"=>"✓", "_method"=>"put", "user"=>{"name"=>"New Name", "email"=>"newemail@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Update User"} and HTTP headers {"HTTP_REFERER"=>"/users/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users/1"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_106@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /profiles/2 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /profiles/2/favorites with {} and HTTP headers {"HTTP_REFERER"=>"/profiles/2"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/profiles/2/favorites"}
+REQUESTING PAGE: GET /profiles/3 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /winks?profile_id=3 with {} and HTTP headers {"HTTP_REFERER"=>"/profiles/3"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/winks?profile_id=3"}
+REQUESTING PAGE: GET /profiles/4 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /profiles/4/hiddens with {} and HTTP headers {"HTTP_REFERER"=>"/profiles/4"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/profiles/4/hiddens"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_110@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_111@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /blogs/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /blogs with {"utf8"=>"✓", "blog"=>{"title"=>"Valid title", "body"=>"Valid body"}, "commit"=>"Submit form"} and HTTP headers {"HTTP_REFERER"=>"/blogs/new"}
+REQUESTING PAGE: GET http://www.example.com/blogs/1 with {} and HTTP headers {"HTTP_REFERER"=>"/blogs"}
+REQUESTING PAGE: GET /sign_in with {} and HTTP headers {}
+REQUESTING PAGE: POST /sign_in with {"utf8"=>"✓", "email"=>"person_112@example.com", "password"=>"foobar", "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/sign_in"}
+REQUESTING PAGE: GET /blogs/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/"}
+REQUESTING PAGE: POST /blogs with {"utf8"=>"✓", "blog"=>{"title"=>"", "body"=>""}, "commit"=>"Submit form"} and HTTP headers {"HTTP_REFERER"=>"/blogs/new"}
