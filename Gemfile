@@ -54,8 +54,7 @@ gem 'heroku'
 gem 'forem', :git => "git://github.com/radar/forem.git"
 gem 'forem-theme-base', :git => "git://github.com/radar/forem-theme-base.git"
 gem 'announcements'
-gem "rails_admin", :git => "git://github.com/sferik/rails_admin.git"
-gem "fastercsv", :platform => :ruby_18
+gem "rails_admin"
 
 
 # To use Jbuilder templates for JSON
@@ -69,3 +68,4 @@ gem "fastercsv", :platform => :ruby_18
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+

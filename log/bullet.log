@@ -10913,4 +10913,276 @@ N+1 Query method call stack
   N+1 Query method call stack
   N+1 Query method call stack
   /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:18:in `_app_views_forem_topics__topic_html_erb__377675510_87263900'
-  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb___402828728_96629370'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb___402828728_96629370'2012-09-12 13:23:56[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:23:56[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 13:23:56[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:23:56[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 13:24:09[WARN] user: csahlman
+dev:3000/forums/forums/dating
+N+1 Query detected
+  Forem::Topic => [:forum]
+  Add to your finder: :include => [:forum]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:16:in `_app_views_forem_topics__topic_html_erb__478577346__633999958'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb___889362802_96998590'2012-09-12 13:35:06[WARN] user: csahlman
+dev:3000/forums/forums/dating
+N+1 Query detected
+  Forem::Topic => [:forum]
+  Add to your finder: :include => [:forum]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:16:in `_app_views_forem_topics__topic_html_erb__478577346__633999958'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb___889362802_96998590'2012-09-12 13:37:27[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:37:27[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 13:37:27[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:37:27[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 13:37:42[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:37:42[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 13:37:42[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:37:42[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 13:37:44[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:37:44[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 13:37:44[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:37:44[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 13:40:53[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:40:53[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 13:40:53[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:40:53[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 13:40:57[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:40:57[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 13:40:57[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:40:57[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 13:46:32[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:46:32[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 13:52:49[WARN] user: csahlman
+dev:3000/assets/rails_admin/aristo/images/ui-icons_454545_256x240.png
+Unused Eager Loading detected
+  PrivateMessage => [:receiver, :conversation]
+  Remove from your finder: :include => [:receiver, :conversation]2012-09-12 13:52:53[WARN] user: csahlman
+dev:3000/admin_interface/profile?associated_collection=sender&compact=true&current_action=create&source_abstract_model=private_message&query=
+Unused Eager Loading detected
+  Profile => [:user]
+  Remove from your finder: :include => [:user]2012-09-12 13:52:55[WARN] user: csahlman
+dev:3000/admin_interface/profile?associated_collection=receiver&compact=true&current_action=create&source_abstract_model=private_message&query=
+Unused Eager Loading detected
+  Profile => [:user]
+  Remove from your finder: :include => [:user]2012-09-12 13:53:10[WARN] user: csahlman
+dev:3000/admin_interface/private_message
+Unused Eager Loading detected
+  PrivateMessage => [:receiver, :conversation]
+  Remove from your finder: :include => [:receiver, :conversation]2012-09-12 13:54:06[WARN] user: csahlman
+dev:3000/assets/rails_admin/bullet_white.png
+Unused Eager Loading detected
+  Profile => [:user]
+  Remove from your finder: :include => [:user]2012-09-12 13:54:06[WARN] user: csahlman
+dev:3000/assets/rails_admin/bullet_white.png
+Unused Eager Loading detected
+  PrivateMessage => [:receiver, :conversation]
+  Remove from your finder: :include => [:receiver, :conversation]2012-09-12 13:54:06[WARN] user: csahlman
+dev:3000/assets/rails_admin/bullet_white.png
+Unused Eager Loading detected
+  Search => [:profile]
+  Remove from your finder: :include => [:profile]2012-09-12 13:57:52[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 13:57:52[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 14:00:33[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 14:00:33[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 15:28:41[WARN] user: csahlman
+dev:3000/searches/new
+Unused Eager Loading detected
+  PrivateMessage => [:receiver, :conversation]
+  Remove from your finder: :include => [:receiver, :conversation]2012-09-12 15:28:41[WARN] user: csahlman
+dev:3000/searches/new
+Unused Eager Loading detected
+  Search => [:profile]
+  Remove from your finder: :include => [:profile]2012-09-12 15:29:07[WARN] user: csahlman
+dev:3000/assets/rails_admin/bullet_white.png
+Unused Eager Loading detected
+  Search => [:profile]
+  Remove from your finder: :include => [:profile]2012-09-12 15:37:27[WARN] user: csahlman
+dev:3000/forums/admin/forums
+Unused Eager Loading detected
+  Search => [:profile]
+  Remove from your finder: :include => [:profile]2012-09-12 15:37:45[WARN] user: csahlman
+dev:3000/forums/forums/dating
+N+1 Query detected
+  Forem::Topic => [:forum]
+  Add to your finder: :include => [:forum]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:16:in `_app_views_forem_topics__topic_html_erb__970139978_92189900'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb__516867414_93913400'2012-09-12 15:37:45[WARN] user: csahlman
+dev:3000/forums/forums/dating
+N+1 Query detected
+  Forem::Topic => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  N+1 Query method call stack
+  /home/csahlman/railsProjects/dating/app/views/forem/topics/_topic.html.erb:18:in `_app_views_forem_topics__topic_html_erb__970139978_92189900'
+  /home/csahlman/railsProjects/dating/app/views/forem/forums/show.html.erb:19:in `_app_views_forem_forums_show_html_erb__516867414_93913400'2012-09-12 15:39:01[WARN] user: csahlman
+dev:3000/assets/rails_admin/bullet_white.png
+Unused Eager Loading detected
+  Search => [:profile]
+  Remove from your finder: :include => [:profile]2012-09-12 15:44:08[WARN] user: csahlman
+dev:3000/searches/new
+Unused Eager Loading detected
+  Profile => [:user]
+  Remove from your finder: :include => [:user]2012-09-12 15:49:51[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 15:49:51[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 15:49:51[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 15:49:51[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 16:56:20[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 16:56:20[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 16:56:20[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 16:56:20[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]2012-09-12 16:56:55[WARN] user: csahlman
+dev:3000/admin_interface/announcement/export
+Unused Eager Loading detected
+  PrivateMessage => [:receiver, :conversation]
+  Remove from your finder: :include => [:receiver, :conversation]2012-09-12 16:57:04[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  PrivateMessage => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 16:57:04[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Favorite => [:favoritee]
+  Remove from your finder: :include => [:favoritee]2012-09-12 16:57:04[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  Wink => [:receiver]
+  Remove from your finder: :include => [:receiver]2012-09-12 16:57:04[WARN] user: csahlman
+dev:3000/
+Unused Eager Loading detected
+  View => [:viewed]
+  Remove from your finder: :include => [:viewed]

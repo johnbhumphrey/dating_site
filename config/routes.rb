@@ -1,4 +1,6 @@
 Dating::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin_interface', :as => 'rails_admin'
+
   mount Forem::Engine, :at => "/forums"
 
 
@@ -26,7 +28,7 @@ Dating::Application.routes.draw do
     
 
   root to: 'pages#home'
-  #match '*path' => redirect('/')   unless Rails.env.development?
+  match '*path' => redirect('/') unless Rails.env.development?
 
   #resources :profiles, :module: 'users' gives you /users/3/profile/edit etc but routes to profile/edit
   # The priority is based upon order of creation:
