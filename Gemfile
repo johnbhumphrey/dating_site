@@ -18,7 +18,6 @@ group :assets do
   gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'twitter-bootstrap-rails'
 end
 
 group :test, :development do
@@ -55,7 +54,7 @@ gem 'forem', :git => "git://github.com/radar/forem.git"
 gem 'forem-theme-base', :git => "git://github.com/radar/forem-theme-base.git"
 gem 'announcements'
 gem "rails_admin"
-
+gem 'twitter-bootstrap-rails'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
