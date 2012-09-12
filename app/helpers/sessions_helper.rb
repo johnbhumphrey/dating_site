@@ -31,7 +31,7 @@ module SessionsHelper
 	  
 	def deny_access
 	    store_location
-	    redirect_to login_path, flash: { notice: "Please sign in to access this page." }
+	    redirect_to sign_in_path, flash: { notice: "Please sign in to access this page." }
     end
 
     def store_location

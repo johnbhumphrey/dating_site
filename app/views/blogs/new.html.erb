@@ -1,0 +1,15 @@
+<h1>Create a new blog post</h1>
+
+<%= form_for @blog do |f| %>
+	<div class="field">
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+	<div class="field">
+		<%= f.label :body %>
+		<%= f.text_area :body %>
+	</div>
+	<div class="actions">
+		<%= f.submit "Submit form" %>
+	</div>
+<% end %>

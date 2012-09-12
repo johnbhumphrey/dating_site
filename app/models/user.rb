@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
 
 
   has_one :profile, dependent: :destroy 
+  has_many :blogs
 
   before_save { |user| user.email = email.downcase }
   before_create :create_remember_token

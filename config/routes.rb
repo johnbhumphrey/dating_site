@@ -1,14 +1,17 @@
 Dating::Application.routes.draw do
+  mount Forem::Engine, :at => "/forums"
+
 
   match '/about', to: "pages#about"
   match '/contact', to: "pages#contact"
   match '/help', to: "pages#help"
   controller :sessions do
-    get 'login' => :new
-    post 'login' => :create
+    get 'sign_in' => :new
+    post 'sign_in' => :create
     delete 'logout' => :destroy
   end  
 
+  resources :blogs
   resources :users
   resources :profiles do
     resources :photos

@@ -30,10 +30,10 @@ group :test, :development do
   gem 'annotate', '2.4.1.beta1'
   gem 'factory_girl_rails', "~> 3.2.0"
   gem 'mongrel', '>= 1.2.0.pre2'
-  gem 'guard-rspec', '0.5.5'
-  gem 'guard-spork', '0.3.2'
+  # gem 'guard-rspec', '0.5.5'
+  # gem 'guard-spork' #, '0.3.2'
   gem 'spork', '0.9.0'
-  gem 'growl', '1.0.3'
+  # gem 'growl', '1.0.3'
   gem 'rb-fsevent', require: false
   #gem 'rb-fsevent', '0.4.3.1', :require => false
   #gem #'linecache19'#,       '>= 0.5.13'
@@ -51,6 +51,9 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem 'quiet_assets', :group => :development
 gem "bullet", :group => "development"
 gem 'heroku'
+gem 'forem', :git => "git://github.com/radar/forem.git"
+gem 'forem-theme-base', :git => "git://github.com/radar/forem-theme-base.git"
+
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

@@ -42,6 +42,10 @@ FactoryGirl.define do
     association :profile
   end  
 
+  factory :blog do
+
+  end  
+
   factory :private_message do |f|
     f.sequence(:body) { |n| "This is a body of a message :) #{n}" }
     f.association :sender, factory: :profile

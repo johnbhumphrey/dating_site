@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "AuthenticationPages" do
-	before { visit login_path }
+	before { visit sign_in_path }
 	let(:user) { FactoryGirl.create(:user) }
 	let(:profile) { FactoryGirl.create(:profile, user: user) }
 	let(:wrong_user) { FactoryGirl.create(:user) }
@@ -31,7 +31,7 @@ describe "AuthenticationPages" do
 		end
 		describe "access when not signed in" do
 			before { get edit_user_path(user) }
-			it { response.should redirect_to login_path }
+			it { response.should redirect_to sign_in_path }
 			describe "friendly forwarding" do
 				before { valid_signin(user) }
 				it { response.should have_selector('body', content: "Editing") }
@@ -55,9 +55,9 @@ describe "AuthenticationPages" do
 
 		describe "when not signed in" do
 			before { get profiles_path } #need get path instead of visit to work
-			specify { response.should redirect_to(login_path) }
+			specify { response.should redirect_to(sign_in_path) }
 			before { get edit_profile_path(user) }
-			specify { response.should redirect_to(login_path)}
+			specify { response.should redirect_to(sign_in_path)}
 		end
 
 		describe "when signed in" do
